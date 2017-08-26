@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.MovePage" Title="Make Your Move">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ScrollView VerticalOptions="Fill">
+                <Label Text="bloodyt hell" />
+               </ScrollView>
+            
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="End">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="NW" Clicked="OnMoveClickedHandler" />
+                            <Button Text="N" Clicked="OnMoveClickedHandler" />
+                            <Button Text="NE" Clicked="OnMoveClickedHandler" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="W" Clicked="OnMoveClickedHandler" />
+                            <Button Text="-" Clicked="OnMoveClickedHandler" />
+                            <Button Text="E" Clicked="OnMoveClickedHandler" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="SW" Clicked="OnMoveClickedHandler" />
+                            <Button Text="S" Clicked="OnMoveClickedHandler" />
+                            <Button Text="SE" Clicked="OnMoveClickedHandler" />
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="End" Orientation="Vertical">
+                        <Button Text="Check Map" Clicked="OnMapClickedHandler" />
+                        <Button Text="Fight" Clicked="OnFightClickedHandler" />
+                        <Button Text="Puzzle" Clicked="OnPuzzleClickedHandler" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

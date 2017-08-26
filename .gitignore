@@ -1,0 +1,8 @@
+PerilousMobile/Droid/obj/*
+PerilousMobile/Droid/Debug/*
+PerilousMobile/Droid/bin/*
+PerilousMobile/iOS/obj/*
+PerilousMobile/iOS/Debug/*
+PerilousMobile/iOS/bin/*
+PerilousMobile/packages/*
+!PerilousMobile/packages/repositories.config

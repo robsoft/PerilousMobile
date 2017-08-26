@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovePage.xaml">
+    <Files>
+      <File FileName="MovePage.xaml" Line="6" Column="1" />
+      <File FileName="MovePage.xaml.cs" Line="29" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PerilousMobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F81BE915-9581-4CE9-A8A7-F4216E005EE1">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.PerilousMobile.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
