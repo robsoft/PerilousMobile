@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelpPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameClass.cs">
     <Files>
       <File FileName="GameClass.cs" Line="208" Column="28" />
       <File FileName="PlayerPage.xaml.cs" Line="35" Column="22" />
       <File FileName="PerilousMobilePage.xaml.cs" Line="17" Column="9" />
-      <File FileName="PerilousMobilePage.xaml" Line="7" Column="5" />
-      <File FileName="PlayerPage.xaml" Line="6" Column="48" />
+      <File FileName="PerilousMobilePage.xaml" Line="15" Column="1" />
+      <File FileName="PlayerPage.xaml" Line="42" Column="1" />
       <File FileName="RestartPage.xaml.cs" Line="12" Column="10" />
       <File FileName="FightPage.xaml.cs" Line="15" Column="1" />
       <File FileName="LootPage.xaml.cs" Line="10" Column="1" />
       <File FileName="PrincessPage.xaml.cs" Line="10" Column="9" />
       <File FileName="PuzzlePage.xaml.cs" Line="15" Column="1" />
-      <File FileName="FightPage.xaml" Line="6" Column="1" />
-      <File FileName="LeavePage.xaml" Line="5" Column="1" />
-      <File FileName="LootPage.xaml" Line="3" Column="17" />
-      <File FileName="PrincessPage.xaml" Line="3" Column="25" />
-      <File FileName="PuzzlePage.xaml" Line="3" Column="19" />
+      <File FileName="FightPage.xaml" Line="8" Column="1" />
+      <File FileName="LeavePage.xaml" Line="8" Column="1" />
+      <File FileName="LootPage.xaml" Line="8" Column="1" />
+      <File FileName="PrincessPage.xaml" Line="8" Column="1" />
+      <File FileName="PuzzlePage.xaml" Line="8" Column="1" />
       <File FileName="AboutPage.xaml" Line="8" Column="1" />
       <File FileName="AboutPage.xaml.cs" Line="5" Column="1" />
       <File FileName="HelpPage.xaml.cs" Line="15" Column="9" />
-      <File FileName="HelpPage.xaml" Line="6" Column="1" />
+      <File FileName="HelpPage.xaml" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
