@@ -5,15 +5,15 @@ using Xamarin.Forms;
 
 namespace PerilousMobile
 {
-    public partial class PuzzlePage : ContentPage
+    public partial class LootPage : ContentPage
     {
-               async void HandleDoneClicked(object sender, System.EventArgs e)
+        async void HandleDoneClicked(object sender, System.EventArgs e)
         {
             await Navigation.PopModalAsync();
 
         }
 
-        public PuzzlePage()
+        public LootPage()
         {
             InitializeComponent();
         }

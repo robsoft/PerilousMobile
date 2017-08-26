@@ -12,8 +12,7 @@ namespace PerilousMobile
 
         async void OnResumeClickedHandler (object sender, System.EventArgs e)
         {
-            // load state in here
-            await Navigation.PushAsync (new MovePage ());
+            await Navigation.PushAsync(new PlayerPage());
         }
 
         async void OnRestartClickedHandler (object sender, System.EventArgs e)
@@ -21,9 +20,9 @@ namespace PerilousMobile
             await Navigation.PushAsync (new RestartPage ());
         }
 
-        async void OnTestClickedHandler (object sender, System.EventArgs e)
+        async void OnHelpClickedHandler (object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync (new TestPage ());
+            await Navigation.PushAsync (new HelpPage ());
         }
 
         public PerilousMobilePage()

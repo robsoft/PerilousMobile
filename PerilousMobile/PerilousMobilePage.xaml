@@ -8,7 +8,7 @@
     <Button Text="Resume Game" Clicked="OnResumeClickedHandler" />
     <Button Text="New Game" Clicked="OnRestartClickedHandler" />
     <Button Text="About" Clicked="OnAboutClickedHandler" />
-    <Button Text="Test" Clicked="OnTestClickedHandler" />
+    <Button Text="Help" Clicked="OnHelpClickedHandler" />
         </StackLayout>
     
 </ContentPage>
