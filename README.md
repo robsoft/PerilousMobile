@@ -14,6 +14,7 @@ http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
      - some 'empty' locations
      - possibility of 'fog'
      - player & princess locations
+     - run takes you to a random adjacent place
 * crude map 'display' for now
 * handle encounters (fight, points etc)
 * death
@@ -21,3 +22,9 @@ http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
 * save state / resume
 * consider GUI
 * graphics tiles etc
+
+
+also;
+ring, zap, bat etc
+grateful princess
+balrog, wraith, troll, etc etc
