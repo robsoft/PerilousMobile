@@ -2,14 +2,22 @@
 
 namespace PerilousMobile
 {
+    
     public partial class App : Application
     {
+
+        public static GameClass game;
+
         public App()
         {
             InitializeComponent();
 
+            game = new GameClass();
+
+
             MainPage = new NavigationPage(new PerilousMobilePage());
         }
+
 
         protected override void OnStart()
         {

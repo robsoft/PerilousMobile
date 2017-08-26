@@ -2,5 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.TestPage"
     Title="Testing">
 	<ContentPage.Content>
-	</ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+        <Label Text="map here" FontFamily="Courier" x:Name="lblMap" />
+        <Label Text="P:princess  E:exit/entrance" />
+        <Label Text="M:monster  L:loot  ?:puzzle" />
+            </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

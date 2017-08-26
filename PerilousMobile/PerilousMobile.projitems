@@ -73,5 +73,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)TestPage.xaml.cs">
       <DependentUpon>TestPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass.cs" />
   </ItemGroup>
 </Project>
