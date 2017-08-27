@@ -2,19 +2,19 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="PlayerPage.xaml.cs">
     <Files>
       <File FileName="GameClass.cs" Line="84" Column="36" />
-      <File FileName="PlayerPage.xaml.cs" Line="53" Column="14" />
+      <File FileName="PlayerPage.xaml.cs" Line="37" Column="9" />
       <File FileName="Enumerations.cs" Line="125" Column="13" />
       <File FileName="PerilousMobilePage.xaml.cs" Line="22" Column="30" />
-      <File FileName="PlayerPage.xaml" Line="2" Column="1" />
-      <File FileName="PerilousMobilePage.xaml" Line="9" Column="46" />
+      <File FileName="PlayerPage.xaml" Line="40" Column="15" />
+      <File FileName="PerilousMobilePage.xaml" Line="22" Column="1" />
       <File FileName="FightPage.xaml.cs" Line="20" Column="29" />
       <File FileName="LootPage.xaml.cs" Line="19" Column="1" />
       <File FileName="PrincessPage.xaml.cs" Line="20" Column="4" />
       <File FileName="FightPage.xaml" Line="11" Column="1" />
-      <File FileName="LootPage.xaml" Line="9" Column="6" />
+      <File FileName="LootPage.xaml" Line="11" Column="1" />
       <File FileName="PuzzlePage.xaml.cs" Line="20" Column="4" />
-      <File FileName="PuzzlePage.xaml" Line="7" Column="68" />
-      <File FileName="PrincessPage.xaml" Line="6" Column="9" />
+      <File FileName="PuzzlePage.xaml" Line="11" Column="1" />
+      <File FileName="PrincessPage.xaml" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
