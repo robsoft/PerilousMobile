@@ -74,5 +74,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)LeavePage.xaml.cs">
       <DependentUpon>LeavePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enumerations.cs" />
   </ItemGroup>
 </Project>

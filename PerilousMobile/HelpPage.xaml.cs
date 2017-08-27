@@ -9,7 +9,7 @@ namespace PerilousMobile
     {
         async void HandleDoneClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PopAsync();
 
         }
         public HelpPage()

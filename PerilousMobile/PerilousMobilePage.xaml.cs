@@ -15,9 +15,11 @@ namespace PerilousMobile
             await Navigation.PushAsync(new PlayerPage());
         }
 
-        async void OnRestartClickedHandler (object sender, System.EventArgs e)
+        //async 
+        void OnRestartClickedHandler (object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync (new RestartPage ());
+            //await Navigation.PushAsync (new RestartPage ());
+            App.game.Reset();
         }
 
         async void OnHelpClickedHandler (object sender, System.EventArgs e)

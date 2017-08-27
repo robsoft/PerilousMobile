@@ -9,15 +9,29 @@ namespace PerilousMobile
     {
         async void HandleDoneClicked(object sender, System.EventArgs e)
         {
-			await Navigation.PopModalAsync();
-
+            // for now, we automatically win the fight
+            App.game.ClearCurrentLocation();
+            App.game.RemoveRandomHealth();
+            await Navigation.PopModalAsync();
 		}
 
-        public FightPage()
+		async void HandleRunClicked(object sender, System.EventArgs e)
+		{
+            if (App.game.RunMove())
+            {
+                await Navigation.PopModalAsync();
+            }
+            else
+            {
+                await DisplayAlert("Flee", "Nowhere to run to!", "OK");
+            }
+		}
+
+		public FightPage()
         {
             InitializeComponent();
 
-            btnDone.Text = "Monster type " + App.game.CurrentLocation().ToString();
+            btnDone.Text = "Monster type " + App.game.GetMonsterText();
         }
     }
 }

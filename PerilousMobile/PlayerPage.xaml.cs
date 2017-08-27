@@ -1,78 +1,108 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
+
+
 
 namespace PerilousMobile
 {
     public partial class PlayerPage : ContentPage
     {
 
-		private void OnMoveClickedHandler(object sender, System.EventArgs e)
-		{
+        private void OnMoveClickedHandler(object sender, System.EventArgs e)
+        {
             // crude button for now
-			Button button = (Button)sender;
-            /*if (!App.game.MovePlayerText(button.Text))
-            {
-                await DisplayAlert("Move", "Can't move " + button.Text, "Ok");
-            }
-            else*/
-			if (App.game.MovePlayerText(button.Text))
-			{
-                RedrawMap();
+            Button button = (Button)sender;
 
-                switch (App.game.CompleteMove())
+            App.game.ProcessPlayerTurn(button.Text);
+            App.game.CompleteTurn();
+
+            ProcessMove();
+        }
+
+        private void ProcessMove()
+        {
+            RedrawMap();
+
+            if (App.game.playerMoved)
+            {
+                switch (App.game.CurrentLocation())
                 {
-					case 0:
-						// nothing to do
-						break;
-                    case 1:
+                    case MapContent.InvalidSpace:
+                        // nothing to do
                         break;
-					case 2:
-						ExecutePrincess();
-						break;
-					case 3:
-						ExecuteLeave();
-						break;
-					case 4: // puzzle
-						ExecutePuzzle();
-						break;
-					case 5:
+                    case MapContent.ClearSpace:
+                        break;
+                    case MapContent.PrincessSpace:
+                        ExecutePrincess();
+                        break;
+                    case MapContent.ExitSpace:
+                        ExecuteLeave();
+                        break;
+                    case MapContent.PuzzleSpace:
+                        ExecutePuzzle();
+                        break;
+                    case MapContent.LootSpace:
                         ExecuteLoot();
-						break;
-					default: // fight
+                        break;
+                    default: // fight
                         ExecuteFight();
                         break;
                 }
-                      
             }
+
+            // now the map might have changed even if we DIDNT move, because weather,
+            // but also the map might now be different again because of events
+            // in the handlers above, so;
+            RedrawMap();
 		}
 
 
+        #region Modal Dialog Handlers
         private void ExecuteFight()
         {
-			Navigation.PushModalAsync(new FightPage());
-		}
-		private void ExecuteLoot()
-		{
-			Navigation.PushModalAsync(new LootPage());
-		}
-		private void ExecutePuzzle()
-		{
-            Navigation.PushModalAsync(new PuzzlePage());
-		}
-		private void ExecutePrincess()
-		{
-			Navigation.PushModalAsync(new PrincessPage());
-		}
-		private void ExecuteLeave()
-		{
-            Navigation.PushModalAsync(new LeavePage());
-		}
+            Navigation.PushModalAsync(new FightPage());
+        }
 
-		private void RedrawMap()
+        private void ExecuteLoot()
+        {
+            Navigation.PushModalAsync(new LootPage());
+        }
+
+        private void ExecutePuzzle()
+        {
+            Navigation.PushModalAsync(new PuzzlePage());
+        }
+
+
+		private void ExecutePrincess()
+        {
+			Navigation.PushModalAsync(new PrincessPage());
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ProcessMove();
+//            RedrawMap();
+        }
+
+        private void ExecuteLeave()
+        {
+            Navigation.PushModalAsync(new LeavePage());
+        }
+        #endregion
+
+        private void RedrawMap()
 		{
             lblMap.Text = App.game.GetMapAsText();
+			lblStatus.Text = " Task   : " + App.game.GetStatusText();
+			lblLoot.Text   = " Loot   : " + App.game.GetLootText();
+            lblCombat.Text = " Combat : " + App.game.GetCombatText();
+            lblArmour.Text = " Armour : " + App.game.GetArmourText();
+            lblHealth.Text = " Health : " + App.game.GetHealthText();
+            lblWind.Text =   " Wind   : " + App.game.GetWindText();
 		}
 
         public PlayerPage()

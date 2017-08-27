@@ -7,7 +7,13 @@ namespace PerilousMobile
 {
     public partial class LeavePage : ContentPage
     {
-        public LeavePage()
+		async void HandleDoneClicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PopModalAsync();
+
+		}
+
+		public LeavePage()
         {
             InitializeComponent();
         }

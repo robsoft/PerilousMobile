@@ -9,11 +9,20 @@ namespace PerilousMobile
     {
         async void HandleDoneClicked(object sender, System.EventArgs e)
         {
+            App.game.ClearCurrentLocation();
+            App.game.AddRandomLoot();
             await Navigation.PopModalAsync();
 
         }
 
-        public LootPage()
+		async void HandleLeaveClicked(object sender, System.EventArgs e)
+		{
+            App.game.playerMoved = false;
+			await Navigation.PopModalAsync();
+
+		}
+
+		public LootPage()
         {
             InitializeComponent();
         }

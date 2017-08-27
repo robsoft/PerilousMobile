@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.PlayerPage"
-    Title="PLAYER">
-	<ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.PlayerPage" Title="Perilous Swamp">
+    <ContentPage.Content>
         <StackLayout HorizontalOptions="Center">
-        <Label Text="map here" FontFamily="Courier" x:Name="lblMap" />
-        <Label Text="*:you  P:princess  E:exits" />
-        <Label Text="M:monster  L:loot  ?:puzzle" />
+            <Label Text="map here" FontFamily="Courier" x:Name="lblMap" />
+            <Label Text="@ you  P princess  E exits" FontFamily="Courier" FontSize="Small"/>
+            <Label Text="M Monster  $ Loot  % Fog" FontFamily="Courier" FontSize="Small"/>
+            <Label FontFamily="Courier" FontAttributes="Bold" Text="Status" x:Name="lblStatus" />
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="End">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Orientation="Vertical">
@@ -16,7 +16,7 @@
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
                             <Button Text="W" Clicked="OnMoveClickedHandler" />
-                            <Button Text="-" Clicked="OnMoveClickedHandler" />
+                            <Button Text="X" Clicked="OnMoveClickedHandler" />
                             <Button Text="E" Clicked="OnMoveClickedHandler" />
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
@@ -25,17 +25,16 @@
                             <Button Text="SE" Clicked="OnMoveClickedHandler" />
                         </StackLayout>
                     </StackLayout>
-<!--                    <StackLayout HorizontalOptions="End" Orientation="Vertical">
-                        <Button Text="Check Map" Clicked="OnMapClickedHandler" />
-                        <Button Text="Fight" Clicked="OnFightClickedHandler" />
-                        <Button Text="Puzzle" Clicked="OnPuzzleClickedHandler" />
+                    <StackLayout HorizontalOptions="End" Orientation="Vertical">
+                        <Label FontFamily="Courier" Text=" " />
+                        <Label FontFamily="Courier" Text="Health Points" x:Name="lblHealth" />
+                        <Label FontFamily="Courier" Text="Combat Points" x:Name="lblCombat" />
+                        <Label FontFamily="Courier" Text="Armour Points" x:Name="lblArmour" />
+                        <Label FontFamily="Courier" Text="Loot" x:Name="lblLoot" />
+                        <Label FontFamily="Courier" Text="Wind" x:Name="lblWind" />
                     </StackLayout>
--->                </StackLayout>
+                </StackLayout>
             </StackLayout>
-
-
-
-            
-            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

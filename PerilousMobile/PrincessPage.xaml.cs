@@ -9,11 +9,18 @@ namespace PerilousMobile
     {
         async void HandleDoneClicked(object sender, System.EventArgs e)
         {
+			App.game.ClearCurrentLocation();
+			App.game.TakePrincess();
             await Navigation.PopModalAsync();
-
         }
 
-        public PrincessPage()
+		async void HandleLeaveClicked(object sender, System.EventArgs e)
+		{
+			App.game.playerMoved = false;
+			await Navigation.PopModalAsync();
+		}
+
+		public PrincessPage()
         {
             InitializeComponent();
         }
