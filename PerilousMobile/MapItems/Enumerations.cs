@@ -17,14 +17,18 @@ namespace PerilousMobile
     public enum PuzzleKinds
     {
         maze,
-        reflex,
+        reflex_test,
         riddle,
         sum
     }
 
     public enum PuzzleDescriptions
     {
-        nasty
+        nasty,
+        tricky,
+        easy,
+        trivial,
+        impossible
     }
 
 
@@ -35,7 +39,8 @@ namespace PerilousMobile
         axe,
         knife,
         broadsword,
-        hammer
+        hammer,
+        catapult
     }
 
     public enum WeaponDescriptions
@@ -49,7 +54,9 @@ namespace PerilousMobile
         silver,
         battered,
         twisted,
-        broken
+        broken,
+        damaged,
+        elegant,
     }
 
     public enum LootKinds
@@ -59,7 +66,10 @@ namespace PerilousMobile
         pendant,
         chain,
         locket,
-        crown
+        crown,
+        braclet,
+        plate,
+        goblet
     }
 
     public enum LootDescriptions
@@ -93,7 +103,13 @@ namespace PerilousMobile
         warm,
         disgusting,
         maggot_ridden,
-        succulent
+        succulent,
+        grimy,
+        soggy,
+        part_cooked,
+        part_eaten,
+        regurgitated,
+        mouldy
     }
 
 
@@ -108,7 +124,21 @@ namespace PerilousMobile
         dozy,
         sleepy,
         angry,
-        ghastly
+        ghastly,
+        worrisome,
+        sad,
+        vicious,
+        violent,
+        furious,
+        confused,
+        cunning,
+        devious,
+        bloody,
+        wretched,
+        obnoxious,
+        flatulent,
+        obese,
+        dizzy
     }
 
     public enum MonsterKinds
@@ -116,11 +146,19 @@ namespace PerilousMobile
         balrog,
         warthog,
         serpent,
-        ringwraith,
+        ring_wraith,
         troll,
         goblin,
         dwarf,
-        elf
+        elf,
+        wraith,
+        giant_lizard,
+        vulture,
+        giant_spider,
+        giant_rat,
+        wild_feline,
+        wolf,
+        giant_parasite_worm
     }
 
     public enum Descriptions
@@ -134,6 +172,26 @@ namespace PerilousMobile
         blunt,
         broken,
         bloody
+    }
+
+
+    public enum PrincessDescriptions
+    {
+        kind,
+        voluptuous,
+        buxom,
+        sarcastic,
+        withering,
+        hearty,
+        snivelling,
+        angry,
+        fearful,
+        brave,
+        cowardly,
+        cunning,
+        upset,
+        bemused,
+        grateful
     }
 
     public enum WeatherContent
