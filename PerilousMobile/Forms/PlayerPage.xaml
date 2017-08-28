@@ -31,7 +31,7 @@
                         <Label FontFamily="Courier" Text="Combat Points" x:Name="lblCombat" />
                         <Label FontFamily="Courier" Text="Armour Points" x:Name="lblArmour" />
                         <Label FontFamily="Courier" Text="Loot" x:Name="lblLoot" />
-                        <Label FontFamily="Courier" Text="Wind" x:Name="lblWind" />
+<!--                        <Label FontFamily="Courier" Text="Wind" x:Name="lblWind" />-->
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

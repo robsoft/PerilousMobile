@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.LootPage" Title="Loot!">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="#39757F" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="64" Android="50" />
+                </StackLayout.HeightRequest>
+                <StackLayout.MinimumHeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="64" Android="50" />
+                </StackLayout.MinimumHeightRequest>
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Padding="3,0,0,0">
+                    <Label Text="Found some Loot!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
+                </StackLayout>
+            </StackLayout>
+            <Label x:Name="lblName" FontSize="Large" Text="Name" />
+            <Label x:Name="lblValue" Text="Value" />
+            <Button Text="Take Loot" x:Name="btnTake" Clicked="HandleTakeClicked" />
+            <Button Text="Leave" x:Name="btnLeave" Clicked="HandleLeaveClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

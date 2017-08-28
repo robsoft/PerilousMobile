@@ -35,19 +35,27 @@ namespace PerilousMobile
                     case MapContent.ClearSpace:
                         break;
                     case MapContent.PrincessSpace:
-                        ExecutePrincess();
+                        ShowPrincessPage();
                         break;
                     case MapContent.ExitSpace:
-                        ExecuteLeave();
+                        ShowLeavePage();
                         break;
                     case MapContent.PuzzleSpace:
-                        ExecutePuzzle();
+                        ShowPuzzlePage();
                         break;
                     case MapContent.LootSpace:
-                        ExecuteLoot();
+                        ShowLootPage();
                         break;
-                    default: // fight
-                        ExecuteFight();
+					case MapContent.WeaponSpace:
+						ShowWeaponPage();
+						break;
+					case MapContent.FoodSpace:
+						ShowFoodPage();
+						break;
+					case MapContent.MonsterSpace:
+						ShowFightPage();
+						break;
+					default: // fight
                         break;
                 }
             }
@@ -60,23 +68,32 @@ namespace PerilousMobile
 
 
         #region Modal Dialog Handlers
-        private void ExecuteFight()
+        private void ShowFightPage()
         {
             Navigation.PushModalAsync(new FightPage());
         }
 
-        private void ExecuteLoot()
+        private void ShowLootPage()
         {
             Navigation.PushModalAsync(new LootPage());
         }
 
-        private void ExecutePuzzle()
+        private void ShowPuzzlePage()
         {
             Navigation.PushModalAsync(new PuzzlePage());
         }
 
+        private void ShowWeaponPage()
+		{
+			Navigation.PushModalAsync(new WeaponPage());
+		}
 
-		private void ExecutePrincess()
+        private void ShowFoodPage()
+		{
+			Navigation.PushModalAsync(new FoodPage());
+		}
+
+        private void ShowPrincessPage()
         {
 			Navigation.PushModalAsync(new PrincessPage());
         }
@@ -85,10 +102,9 @@ namespace PerilousMobile
         {
             base.OnAppearing();
             ProcessMove();
-//            RedrawMap();
         }
 
-        private void ExecuteLeave()
+        private void ShowLeavePage()
         {
             Navigation.PushModalAsync(new LeavePage());
         }
@@ -102,7 +118,7 @@ namespace PerilousMobile
             lblCombat.Text = " Combat : " + App.game.GetCombatText();
             lblArmour.Text = " Armour : " + App.game.GetArmourText();
             lblHealth.Text = " Health : " + App.game.GetHealthText();
-            lblWind.Text =   " Wind   : " + App.game.GetWindText();
+            //lblWind.Text =   " Wind   : " + App.game.GetWindText();
 		}
 
         public PlayerPage()

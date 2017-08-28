@@ -7,7 +7,9 @@ namespace PerilousMobile
 {
     public partial class LootPage : ContentPage
     {
-        async void HandleDoneClicked(object sender, System.EventArgs e)
+        private LootClass loot;
+
+        async void HandleTakeClicked(object sender, System.EventArgs e)
         {
             App.game.ClearCurrentLocation();
             App.game.AddRandomLoot();
@@ -25,6 +27,11 @@ namespace PerilousMobile
 		public LootPage()
         {
             InitializeComponent();
-        }
+            loot = App.game.GetCurrentLoot();
+
+            lblValue.Text = "Value " + loot.lootPoints.ToString();
+			lblName.Text = loot.FullDescription();
+
+		}
     }
 }

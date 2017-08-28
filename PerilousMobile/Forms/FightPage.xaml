@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.FightPage" Title="Fight">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="#39757F" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="64" Android="50" />
+                </StackLayout.HeightRequest>
+                <StackLayout.MinimumHeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="64" Android="50" />
+                </StackLayout.MinimumHeightRequest>
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Padding="3,0,0,0">
+                    <Label Text="Monster!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
+                </StackLayout>
+            </StackLayout>
+            <Label x:Name="lblName" FontSize="Large" Text="Name" />
+            <Label x:Name="lblCombat" Text="Combat" />
+            <Label x:Name="lblHealth" Text="Health" />
+            <Button Text="Fight" x:Name="btnFight" Clicked="HandleFightClicked" />
+            <Button Text="Bribe" x:Name="btnBribe" Clicked="HandleBribeClicked" />
+            <Button Text="Run!" x:Name="btnRun" Clicked="HandleRunClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

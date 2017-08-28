@@ -7,12 +7,23 @@ namespace PerilousMobile
 {
     public partial class FightPage : ContentPage
     {
-        async void HandleDoneClicked(object sender, System.EventArgs e)
+
+        private MonsterClass monster;
+
+        async void HandleFightClicked(object sender, System.EventArgs e)
         {
             // for now, we automatically win the fight
             App.game.ClearCurrentLocation();
             App.game.RemoveRandomHealth();
             await Navigation.PopModalAsync();
+		}
+
+		async void HandleBribeClicked(object sender, System.EventArgs e)
+		{
+			// for now, we automatically win the fight
+			App.game.ClearCurrentLocation();
+			App.game.RemoveRandomHealth();
+			await Navigation.PopModalAsync();
 		}
 
 		async void HandleRunClicked(object sender, System.EventArgs e)
@@ -31,7 +42,12 @@ namespace PerilousMobile
         {
             InitializeComponent();
 
-            btnDone.Text = "Monster type " + App.game.GetMonsterText();
+            monster = App.game.GetCurrentMonster();
+
+            lblCombat.Text = "Combat "+monster.combatPoints.ToString();
+            lblHealth.Text = "Health " + monster.healthPoints.ToString();
+            lblName.Text = monster.FullDescription();
+
         }
     }
 }

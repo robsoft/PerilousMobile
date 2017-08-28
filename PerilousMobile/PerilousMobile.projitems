@@ -11,31 +11,37 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)PerilousMobilePage.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AboutPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\AboutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FightPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\FightPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)PuzzlePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\FoodPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RestartPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\HelpPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)HelpPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\LeavePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)PlayerPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\LootPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LootPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\PlayerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)PrincessPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\PrincessPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LeavePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\PuzzlePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\RestartPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\WeaponPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -46,35 +52,57 @@
     <Compile Include="$(MSBuildThisFileDirectory)PerilousMobilePage.xaml.cs">
       <DependentUpon>PerilousMobilePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AboutPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Text.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\MapItemClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\LootClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\FoodClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\Enumerations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)FightPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\FightPage.xaml.cs">
       <DependentUpon>FightPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PuzzlePage.xaml.cs">
-      <DependentUpon>PuzzlePage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\FoodPage.xaml.cs">
+      <DependentUpon>FoodPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)RestartPage.xaml.cs">
-      <DependentUpon>RestartPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)HelpPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\HelpPage.xaml.cs">
       <DependentUpon>HelpPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PlayerPage.xaml.cs">
-      <DependentUpon>PlayerPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GameClass.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)LootPage.xaml.cs">
-      <DependentUpon>LootPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PrincessPage.xaml.cs">
-      <DependentUpon>PrincessPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)LeavePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\LeavePage.xaml.cs">
       <DependentUpon>LeavePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Enumerations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\LootPage.xaml.cs">
+      <DependentUpon>LootPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\MonsterClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\PlayerPage.xaml.cs">
+      <DependentUpon>PlayerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\PrincessPage.xaml.cs">
+      <DependentUpon>PrincessPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\PuzzleClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\PuzzlePage.xaml.cs">
+      <DependentUpon>PuzzlePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\RestartPage.xaml.cs">
+      <DependentUpon>RestartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MapItems\WeaponClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\WeaponPage.xaml.cs">
+      <DependentUpon>WeaponPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\WeatherExtras.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Maps.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Moves.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)GameClass\" />
+    <Folder Include="$(MSBuildThisFileDirectory)MapItems\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Forms\" />
   </ItemGroup>
 </Project>
