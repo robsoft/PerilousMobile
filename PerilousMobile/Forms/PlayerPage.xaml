@@ -16,7 +16,7 @@
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
                             <Button Text="W" Clicked="OnMoveClickedHandler" />
-                            <Button Text="X" Clicked="OnMoveClickedHandler" />
+                            <Button Text="I" Clicked="OnInventoryClickedHandler" />
                             <Button Text="E" Clicked="OnMoveClickedHandler" />
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">

@@ -4,10 +4,6 @@ namespace PerilousMobile
     public partial class GameClass
     {
 
-		public void ClearCurrentLocation()
-		{
-			map[xPlayer, yPlayer] = MapContent.ClearSpace;
-		}
 
 
 		public void PopulateMap()

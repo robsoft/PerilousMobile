@@ -2,7 +2,7 @@
 
 namespace PerilousMobile
 {
-    public partial class PerilousMobilePage : ContentPage
+    public partial class MenuPage : ContentPage
     {
 
         async void OnAboutClickedHandler (object sender, System.EventArgs e)
@@ -12,14 +12,23 @@ namespace PerilousMobile
 
         async void OnResumeClickedHandler (object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new PlayerPage());
+            if (App.game.gameOver)
+				App.game.Reset();
+            
+			await Navigation.PushAsync(new PlayerPage());
         }
 
-        //async 
-        void OnRestartClickedHandler (object sender, System.EventArgs e)
+        async void OnRestartClickedHandler (object sender, System.EventArgs e)
         {
             //await Navigation.PushAsync (new RestartPage ());
-            App.game.Reset();
+
+            var answer = await(DisplayAlert("Start New Game?", "Any previous progress will be lost?", "Yes", "No"));
+            if (answer)
+            {
+                App.game.Reset();
+                OnResumeClickedHandler(null,null);
+            }
+
         }
 
         async void OnHelpClickedHandler (object sender, System.EventArgs e)
@@ -27,7 +36,7 @@ namespace PerilousMobile
             await Navigation.PushAsync (new HelpPage ());
         }
 
-        public PerilousMobilePage()
+        public MenuPage()
         {
             InitializeComponent();
         }

@@ -7,6 +7,9 @@ namespace PerilousMobile
 {
     public partial class PuzzlePage : ContentPage
     {
+
+        private PuzzleClass puzzle;
+
         async void HandleDoneClicked(object sender, System.EventArgs e)
         {
             // assume puzzle solved for now
@@ -22,7 +25,13 @@ namespace PerilousMobile
 
 		public PuzzlePage()
         {
-            InitializeComponent();
+			InitializeComponent();
+
+			puzzle = App.game.GetCurrentPuzzle();
+
+			//lblCombat.Text = "Combat " + monster.combatPoints.ToString();
+			//lblHealth.Text = "Health " + monster.healthPoints.ToString();
+			lblName.Text = puzzle.FullDescription();
         }
     }
 }

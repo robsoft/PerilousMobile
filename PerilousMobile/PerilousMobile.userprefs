@@ -1,7 +1,15 @@
 ﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="JournalPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Forms/InventoryPage.xaml.cs">
     <Files>
-      <File FileName="JournalPage.xaml" Line="7" Column="1" />
+      <File FileName="GameClass/GameClass.cs" Line="83" Column="57" />
+      <File FileName="MapItems/WeaponClass.cs" Line="8" Column="1" />
+      <File FileName="MapItems/LootClass.cs" Line="15" Column="34" />
+      <File FileName="Forms/InventoryPage.xaml" Line="3" Column="26" />
+      <File FileName="Forms/InventoryPage.xaml.cs" Line="4" Column="21" />
+      <File FileName="Forms/LeavePage.xaml.cs" Line="21" Column="1" />
+      <File FileName="Forms/LeavePage.xaml" Line="20" Column="1" />
+      <File FileName="Forms/PlayerPage.xaml.cs" Line="24" Column="38" />
+      <File FileName="Forms/PlayerPage.xaml" Line="19" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

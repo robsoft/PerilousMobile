@@ -33,6 +33,7 @@ namespace PerilousMobile
         private int lootPoints = 0;
         private int combatPoints = 0;
         private bool foundPrincess = false;
+        public bool gameOver = false;
 
         private List<MonsterClass> monsters = new List<MonsterClass>();
         private List<PuzzleClass> puzzles = new List<PuzzleClass>();
@@ -56,6 +57,43 @@ namespace PerilousMobile
             }
 
         }
+
+        public void ClearCurrentLocation()
+        {
+            // any clean up?
+            switch (map[xPlayer, yPlayer])
+                {
+                    case MapContent.InvalidSpace:
+                        break;
+                    case MapContent.ClearSpace:
+                        break;
+                    case MapContent.PrincessSpace:
+                        break;
+                    case MapContent.ExitSpace:
+                        break;
+                    case MapContent.PuzzleSpace:
+                      puzzles.Remove(GetCurrentPuzzle());
+                        break;
+                    case MapContent.LootSpace:
+                      //loot.Remove(GetCurrentLoot());
+                    GetCurrentLoot().inInventory=true;
+                        break;
+                    case MapContent.WeaponSpace:
+                      //weapons.Remove(GetCurrentWeapon());
+                    GetCurrentWeapon().inInventory=true;
+                        break;
+                    case MapContent.FoodSpace:
+                      food.Remove(GetCurrentFood());
+                        break;
+                    case MapContent.MonsterSpace:
+                      monsters.Remove(GetCurrentMonster());
+                        break;
+                    default: // fight
+                break;
+            }
+            map[xPlayer, yPlayer] = MapContent.ClearSpace;
+        }
+
 
         public WeaponClass GetCurrentWeapon()
         {
@@ -151,16 +189,20 @@ namespace PerilousMobile
         {
             PopulateMap();
             //PopulateWeather();
+
             moveCount = 0;
+            playerMoved=false;
+            haveMap = false;
+            foundPrincess = false;
+            gameOver = false;
 
             optimalHealthPoints = rnd.Next(550, 1251);
             healthPoints = optimalHealthPoints;
             armourPoints = rnd.Next(10, 101);
-            lootPoints = 0;
+            lootPoints = 50;
             combatPoints = rnd.Next(550, 1451);
-            foundPrincess = false;
-
         }
+
 
         public GameClass()
         {

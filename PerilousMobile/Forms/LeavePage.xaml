@@ -13,7 +13,8 @@
                     <Label Text="Take an Exit!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
-            <Button Text="Exit" x:Name="btnDone" Clicked="HandleDoneClicked" />
+            <Button Text="Exit Swamp" x:Name="btnExit" Clicked="HandleExitClicked" />
+            <Button Text="Continue Quest" x:Name="btnContinue" Clicked="HandleContinueClicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

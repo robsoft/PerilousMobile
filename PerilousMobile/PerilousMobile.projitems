@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)PerilousMobilePage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MenuPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\AboutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -44,13 +44,16 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\WeaponPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\InventoryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PerilousMobilePage.xaml.cs">
-      <DependentUpon>PerilousMobilePage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
@@ -99,6 +102,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)GameClass\WeatherExtras.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Maps.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Moves.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\InventoryPage.xaml.cs">
+      <DependentUpon>InventoryPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GameClass\" />

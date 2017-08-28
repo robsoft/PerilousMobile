@@ -4,6 +4,8 @@ namespace PerilousMobile
     public class WeaponClass : MapItemClass
     {
 		public int combatPoints = 0;
+        public bool inInventory = false;
+
 
 		private WeaponDescriptions description;
 		public WeaponKinds kind;

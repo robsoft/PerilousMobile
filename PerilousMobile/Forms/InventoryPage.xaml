@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.PuzzlePage" Title="Puzzle!">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.InventoryPage" Title="Inventory">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <StackLayout BackgroundColor="#39757F" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
@@ -10,12 +10,11 @@
                     <OnPlatform x:TypeArguments="x:Double" iOS="64" Android="50" />
                 </StackLayout.MinimumHeightRequest>
                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Padding="3,0,0,0">
-                    <Label Text="A Puzzle!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
+                    <Label Text="Inventory" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
-            <Label Text="Name" x:Name="lblName" FontSize="Large" />
-            <Button Text="Solve Puzzle" x:Name="btnDone" Clicked="HandleDoneClicked" />
-            <Button Text="Leave" x:Name="btnLeave" Clicked="HandleLeaveClicked" />
+            <Button Text="Resume Quest" x:Name="btnResume" Clicked="HandleResumeClicked" />
         </StackLayout>
     </ContentPage.Content>
+
 </ContentPage>

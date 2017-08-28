@@ -3,7 +3,6 @@
     Title="About">
 	<ContentPage.Content>
 <StackLayout>
-    <Button Text="Close" Clicked="OnCloseClickedHandler" />
 <Label Text="version 0.01" />
 </StackLayout>
     </ContentPage.Content>

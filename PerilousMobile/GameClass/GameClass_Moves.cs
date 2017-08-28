@@ -70,6 +70,11 @@ namespace PerilousMobile
 			foundPrincess = true;
 		}
 
+		public void EndGame()
+		{
+			gameOver = true;
+		}
+
 		public void AddRandomLoot()
 		{
 			lootPoints = lootPoints + rnd.Next(1, 501);

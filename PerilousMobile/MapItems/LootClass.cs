@@ -5,6 +5,7 @@ namespace PerilousMobile
     {
 
         public int lootPoints = 0;
+        public bool inInventory = false;
 
 		private LootDescriptions description;
 		public LootKinds kind;

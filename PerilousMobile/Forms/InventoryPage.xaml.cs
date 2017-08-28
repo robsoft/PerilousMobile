@@ -5,22 +5,21 @@ using Xamarin.Forms;
 
 namespace PerilousMobile
 {
-    public partial class LeavePage : ContentPage
+    public partial class InventoryPage : ContentPage
     {
-		async void HandleExitClicked(object sender, System.EventArgs e)
+		async void HandleResumeClicked(object sender, System.EventArgs e)
 		{
-            App.game.EndGame();
+            App.game.playerMoved = false;
 			await Navigation.PopModalAsync();
 		}
 
-		async void HandleContinueClicked(object sender, System.EventArgs e)
+		async void HandleDropClicked(object sender, System.EventArgs e)
 		{
 			App.game.playerMoved = false;
 			await Navigation.PopModalAsync();
 		}
 
-
-		public LeavePage()
+		public InventoryPage()
         {
             InitializeComponent();
         }

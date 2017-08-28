@@ -10,6 +10,21 @@ namespace PerilousMobile
     public partial class PlayerPage : ContentPage
     {
 
+		async protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			if (App.game.gameOver)
+				await Navigation.PopAsync();
+			else
+				ProcessMove();
+		}
+
+		private void OnInventoryClickedHandler(object sender, System.EventArgs e)
+		{
+			Navigation.PushModalAsync(new InventoryPage());
+		}
+
+		
         private void OnMoveClickedHandler(object sender, System.EventArgs e)
         {
             // crude button for now
@@ -66,9 +81,8 @@ namespace PerilousMobile
             RedrawMap();
 		}
 
-
-        #region Modal Dialog Handlers
-        private void ShowFightPage()
+		#region Modal Dialog Handlers
+		private void ShowFightPage()
         {
             Navigation.PushModalAsync(new FightPage());
         }
@@ -96,12 +110,6 @@ namespace PerilousMobile
         private void ShowPrincessPage()
         {
 			Navigation.PushModalAsync(new PrincessPage());
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            ProcessMove();
         }
 
         private void ShowLeavePage()
