@@ -1,10 +1,10 @@
-# PerilousMobile
-Perilous Swamp inspired Xamarin Forms
+# Perilous Swamp (mobile version)
+"Perilous Swamp"-inspired Xamarin Forms mini game
 
 inspiration (though rapidly moving on from it!)
 http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
 
-
+29/8/17:
 roughly 1 days work to complete this to playable (no gui)
  * version numbering - 15m
  * combat - plan out first, 45m
