@@ -18,7 +18,8 @@ roughly 1 days work to complete this to playable (no gui)
  * inventory list - 60m
  * inventory also shows approximately how much food, puzzles, loot etc left to find - 60m
  * 'deus ex machina' providing advice & stats?
- * ~~health goes down slightly quicker when with princess, also food gets halved ~~
+ * ~~health goes down slightly quicker when with princess, also food gets halved~~
+ 
 
 
 # to-do
