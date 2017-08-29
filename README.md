@@ -6,6 +6,7 @@ http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
 
 29/8/17:
 roughly 1 days work to complete this to playable (no gui)
+ * saving/resuming game
  * version numbering - 15m
  * combat - plan out first, 45m
  * ~~android sanity check - 30m~~
