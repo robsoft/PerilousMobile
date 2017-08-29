@@ -12,7 +12,7 @@ namespace PerilousMobile
         async void HandleTakeClicked(object sender, System.EventArgs e)
         {
             App.game.ClearCurrentLocation();
-            App.game.AddRandomLoot();
+            App.game.IncreaseLoot(loot.lootPoints);
             await Navigation.PopModalAsync();
 
         }

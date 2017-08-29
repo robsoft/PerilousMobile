@@ -72,7 +72,7 @@ namespace PerilousMobile
 				if (map[x, y] == MapContent.ClearSpace)
 				{
 					map[x, y] = MapContent.PuzzleSpace;
-					AddPuzzle(x, y);
+					AddPuzzleContent(x, y);
 					pCount++;
 				}
 			}
@@ -87,7 +87,7 @@ namespace PerilousMobile
 				if (map[x, y] == MapContent.ClearSpace)
 				{
 					map[x, y] = MapContent.WeaponSpace;
-					AddWeapon(x, y);
+					AddWeaponContent(x, y);
 					wCount++;
 				}
 			}
@@ -102,7 +102,7 @@ namespace PerilousMobile
 				if (map[x, y] == MapContent.ClearSpace)
 				{
 					map[x, y] = MapContent.LootSpace;
-					AddLoot(x, y);
+					AddLootContent(x, y);
 					lCount++;
 				}
 			}
@@ -117,7 +117,7 @@ namespace PerilousMobile
 				if (map[x, y] == MapContent.ClearSpace)
 				{
 					map[x, y] = MapContent.FoodSpace;
-					AddFood(x, y);
+					AddFoodContent(x, y);
 					fCount++;
 				}
 			}
@@ -133,7 +133,7 @@ namespace PerilousMobile
 				if (map[x, y] == MapContent.ClearSpace)
 				{
 					map[x, y] = MapContent.MonsterSpace;
-					AddMonster(x, y);
+					AddMonsterContent(x, y);
 					mCount++;
 				}
 			}
@@ -159,30 +159,30 @@ namespace PerilousMobile
 		}
 
 
-		private void AddFood(int xCoord, int yCoord)
+        private void AddFoodContent(int xCoord, int yCoord)
 		{
 			FoodClass thisFood = new FoodClass(xCoord, yCoord);
 			food.Add(thisFood);
 		}
 
-		private void AddMonster(int xCoord, int yCoord)
+        private void AddMonsterContent(int xCoord, int yCoord)
 		{
 			MonsterClass thisMonster = new MonsterClass(xCoord, yCoord);
 			monsters.Add(thisMonster);
 		}
-		private void AddPuzzle(int xCoord, int yCoord)
+        private void AddPuzzleContent(int xCoord, int yCoord)
 		{
 			PuzzleClass thisPuzzle = new PuzzleClass(xCoord, yCoord);
 			puzzles.Add(thisPuzzle);
 		}
 
-		private void AddLoot(int xCoord, int yCoord)
+        private void AddLootContent(int xCoord, int yCoord)
 		{
 			LootClass thisLoot = new LootClass(xCoord, yCoord);
 			loot.Add(thisLoot);
 		}
 
-		private void AddWeapon(int xCoord, int yCoord)
+        private void AddWeaponContent(int xCoord, int yCoord)
 		{
 			WeaponClass thisWeapon = new WeaponClass(xCoord, yCoord);
 			weapons.Add(thisWeapon);

@@ -14,6 +14,11 @@ namespace PerilousMobile
         {
             // assume puzzle solved for now
             App.game.ClearCurrentLocation();
+            if (App.game.haveMap == false)
+            {
+                App.game.haveMap = true;
+                await DisplayAlert("Temp Puzzle", "You have found a map", "Ok");
+            }
             await Navigation.PopModalAsync();
         }
 

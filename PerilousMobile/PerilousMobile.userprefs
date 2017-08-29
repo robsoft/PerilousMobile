@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Forms/PlayerPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameClass/GameClass_Maps.cs">
     <Files>
-      <File FileName="GameClass/GameClass.cs" Line="83" Column="57" />
+      <File FileName="GameClass/GameClass.cs" Line="24" Column="9" />
       <File FileName="MapItems/WeaponClass.cs" Line="8" Column="1" />
       <File FileName="MapItems/LootClass.cs" Line="15" Column="34" />
       <File FileName="Forms/InventoryPage.xaml" Line="21" Column="1" />
@@ -9,9 +9,16 @@
       <File FileName="Forms/LeavePage.xaml.cs" Line="21" Column="1" />
       <File FileName="Forms/LeavePage.xaml" Line="20" Column="15" />
       <File FileName="Forms/PlayerPage.xaml.cs" Line="24" Column="38" />
-      <File FileName="Forms/PlayerPage.xaml" Line="12" Column="63" />
+      <File FileName="Forms/PlayerPage.xaml" Line="40" Column="15" />
       <File FileName="MapItems/Enumerations.cs" Line="33" Column="5" />
       <File FileName="Forms/AboutPage.xaml" Line="10" Column="1" />
+      <File FileName="GameClass/GameClass_Moves.cs" Line="26" Column="1" />
+      <File FileName="Forms/FightPage.xaml.cs" Line="20" Column="9" />
+      <File FileName="Forms/LootPage.xaml.cs" Line="16" Column="13" />
+      <File FileName="Forms/FoodPage.xaml.cs" Line="15" Column="13" />
+      <File FileName="Forms/PrincessPage.xaml.cs" Line="13" Column="16" />
+      <File FileName="Forms/PuzzlePage.xaml.cs" Line="17" Column="13" />
+      <File FileName="GameClass/GameClass_Maps.cs" Line="164" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

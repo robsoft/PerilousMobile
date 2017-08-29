@@ -12,7 +12,7 @@ namespace PerilousMobile
 
 		async void HandleEatClicked(object sender, System.EventArgs e)
 		{
-			App.game.IncreaseHealth(food.healthPoints);
+			App.game.IncreaseHealthFromFood(food.healthPoints);
 			App.game.ClearCurrentLocation();
 			await Navigation.PopModalAsync();
 		}

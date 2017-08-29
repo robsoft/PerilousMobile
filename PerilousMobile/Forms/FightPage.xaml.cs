@@ -14,7 +14,7 @@ namespace PerilousMobile
         {
             // for now, we automatically win the fight
             App.game.ClearCurrentLocation();
-            App.game.RemoveRandomHealth();
+            //App.game.RemoveRandomHealth();
             await Navigation.PopModalAsync();
 		}
 
@@ -22,7 +22,7 @@ namespace PerilousMobile
 		{
 			// for now, we automatically win the fight
 			App.game.ClearCurrentLocation();
-			App.game.RemoveRandomHealth();
+			//App.game.RemoveRandomHealth();
 			await Navigation.PopModalAsync();
 		}
 

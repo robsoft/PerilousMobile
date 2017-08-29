@@ -12,12 +12,13 @@ namespace PerilousMobile
         private const int yDim = 18;
         private const int noMapViewableSize = 4;
 
-        private const int lootCount = (int)((xDim * yDim) * 0.03);
-        private const int monsterCount = (int)((xDim * yDim) * 0.1);
-        private const int puzzleCount = (int)((xDim * yDim) * 0.03);
-        private const int weaponCount = (int)((xDim * yDim) * 0.03);
-        private const int foodCount = (int)((xDim * yDim) * 0.03);
-
+        private const int lootCount = (int)((xDim * yDim) * 0.02);
+        private const int monsterCount = (int)((xDim * yDim) * 0.09);
+        private const int puzzleCount = 4;//(int)((xDim * yDim) * 0.03);
+        private const int weaponCount = (int)((xDim * yDim) * 0.02);
+        private const int foodCount = (int)((xDim * yDim) * 0.04);
+        private const int healthConsumedPrincess = 8;
+        private const int healthConsumedAlone = 5;
 
         private MapContent[,] map = new MapContent[xDim, yDim];
 
@@ -176,7 +177,7 @@ namespace PerilousMobile
             if (map[newx, newy] == MapContent.InvalidSpace) return;
 
             // update our position and signal we moved
-            DecreaseHealth(5);
+            DecreaseHealthForMove();
             playerMoved = true;
             xPlayer = newx;
             yPlayer = newy;
