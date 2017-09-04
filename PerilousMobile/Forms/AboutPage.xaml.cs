@@ -11,6 +11,8 @@ namespace PerilousMobile
         public AboutPage()
         {
             InitializeComponent();
+
+            lblVersion.Text = "Version 0.2";
         }
     }
 }

@@ -22,6 +22,13 @@ namespace PerilousMobile
 
         }
 
+        public void DecreaseHealth(int health)
+        {
+            healthPoints = healthPoints - health;
+            if (healthPoints < 0)
+                healthPoints = 0;
+        }
+
         public void Heal()
         {
             if (isHealing)
@@ -38,9 +45,9 @@ namespace PerilousMobile
 
         public MonsterClass(int x, int y) : base(MapContent.MonsterSpace, x, y)
         {
-            optimalHealthPoints = Utils.rnd.Next(225, 1111);
+            optimalHealthPoints = Utils.rnd.Next(155, 951);
             healthPoints = optimalHealthPoints;
-            combatPoints = Utils.rnd.Next(10, 401);
+            combatPoints = Utils.rnd.Next(1, 14);
             lootPoints = Utils.rnd.Next(0, 201);
 
             Array values = Enum.GetValues(typeof(MonsterKinds));

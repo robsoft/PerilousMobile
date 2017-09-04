@@ -7,10 +7,17 @@ namespace PerilousMobile
     {
 
         public Random rnd;
+		public int xPlayer = 0;
+		public int yPlayer = 0;
+		public bool playerMoved = false;
+		public int moveCount = 0;
+		public bool haveMap = false;
+		public bool gameOver = false;
 
+		private const int internalVersion = 1;
         private const int xDim = 28;
         private const int yDim = 18;
-        private const int noMapViewableSize = 4;
+        private const int noMapViewableSize = 3;
 
         private const int lootCount = (int)((xDim * yDim) * 0.02);
         private const int monsterCount = (int)((xDim * yDim) * 0.09);
@@ -20,29 +27,20 @@ namespace PerilousMobile
         private const int healthConsumedPrincess = 8;
         private const int healthConsumedAlone = 5;
 
-        private MapContent[,] map = new MapContent[xDim, yDim];
+		private int optimalHealthPoints = 0;
+		public int healthPoints = 0;
+		public int armourPoints = 0;
+		public int lootPoints = 0;
+		public int combatPoints = 0;
+		private bool foundPrincess = false;
 
-        public int xPlayer = 0;
-        public int yPlayer = 0;
-        public bool playerMoved = false;
-        public int moveCount = 0;
-        public bool haveMap = false;
-
-        private int optimalHealthPoints = 0;
-        private int healthPoints = 0;
-        private int armourPoints = 0;
-        private int lootPoints = 0;
-        private int combatPoints = 0;
-        private bool foundPrincess = false;
-        public bool gameOver = false;
+		private MapContent[,] map = new MapContent[xDim, yDim];
 
         private List<MonsterClass> monsters = new List<MonsterClass>();
         private List<PuzzleClass> puzzles = new List<PuzzleClass>();
         private List<LootClass> loot = new List<LootClass>();
         private List<WeaponClass> weapons = new List<WeaponClass>();
         private List<FoodClass> food = new List<FoodClass>();
-
-
 
         private void ClearMonsters()
         {
@@ -73,21 +71,19 @@ namespace PerilousMobile
                     case MapContent.ExitSpace:
                         break;
                     case MapContent.PuzzleSpace:
-                      puzzles.Remove(GetCurrentPuzzle());
+                        puzzles.Remove(GetCurrentPuzzle());
                         break;
                     case MapContent.LootSpace:
-                      //loot.Remove(GetCurrentLoot());
-                    GetCurrentLoot().inInventory=true;
+                        GetCurrentLoot().inInventory=true;
                         break;
                     case MapContent.WeaponSpace:
-                      //weapons.Remove(GetCurrentWeapon());
-                    GetCurrentWeapon().inInventory=true;
+                        GetCurrentWeapon().inInventory=true;
                         break;
                     case MapContent.FoodSpace:
-                      food.Remove(GetCurrentFood());
+                        food.Remove(GetCurrentFood());
                         break;
                     case MapContent.MonsterSpace:
-                      monsters.Remove(GetCurrentMonster());
+                        monsters.Remove(GetCurrentMonster());
                         break;
                     default: // fight
                 break;
@@ -197,11 +193,11 @@ namespace PerilousMobile
             foundPrincess = false;
             gameOver = false;
 
-            optimalHealthPoints = rnd.Next(550, 1251);
+            optimalHealthPoints = rnd.Next(901, 1451);
             healthPoints = optimalHealthPoints;
-            armourPoints = rnd.Next(10, 101);
+            armourPoints = rnd.Next(1, 11);
             lootPoints = 50;
-            combatPoints = rnd.Next(550, 1451);
+            combatPoints = rnd.Next(1, 21);
         }
 
 
