@@ -121,11 +121,12 @@ namespace PerilousMobile
         private void RedrawMap()
 		{
             lblMap.Text = App.game.GetMapAsText();
-			lblStatus.Text = " Task   : " + App.game.GetStatusText();
-			lblLoot.Text   = " Loot   : " + App.game.GetLootText();
-            lblCombat.Text = " Combat : " + App.game.GetCombatText();
-            lblArmour.Text = " Armour : " + App.game.GetArmourText();
-            lblHealth.Text = " Health : " + App.game.GetHealthText();
+			lblStatus.Text = " Task - " + App.game.GetStatusText();
+
+			lblLoot.Text   = "  Loot   : " + App.game.GetLootText();
+            lblCombat.Text = "  Combat : " + App.game.GetCombatText();
+            lblArmour.Text = "  Armour : " + App.game.GetArmourText();
+            lblHealth.Text = "  Health : " + App.game.GetHealthText();
             //lblWind.Text =   " Wind   : " + App.game.GetWindText();
 		}
 

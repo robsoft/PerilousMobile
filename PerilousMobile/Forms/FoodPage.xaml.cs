@@ -30,7 +30,7 @@ namespace PerilousMobile
             food = App.game.GetCurrentFood();
 
 			lblName.Text = food.FullDescription();
-			lblHealth.Text = "Health " + food.healthPoints.ToString();
+            lblHealth.Text = "Gives " + food.healthPoints.ToString() + " Health";
 
 		}
 

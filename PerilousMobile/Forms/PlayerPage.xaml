@@ -2,10 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.PlayerPage" Title="Perilous Swamp">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center">
-            <Label Text="map here" FontFamily="Courier" x:Name="lblMap" />
-            <Label Text="@ you  P princess  E exits" FontFamily="Courier" FontSize="Small"/>
-            <Label Text="M Monster  $ Loot  % Fog" FontFamily="Courier" FontSize="Small"/>
-            <Label FontFamily="Courier" FontAttributes="Bold" Text="Status" x:Name="lblStatus" />
+            <Label HorizontalTextAlignment="Center" Text="map here" FontFamily="Courier" x:Name="lblMap">
+                                <Label.FontFamily>     
+                <OnPlatform x:TypeArguments="x:String">         
+                <OnPlatform.Android>monospace</OnPlatform.Android>         
+                <OnPlatform.iOS>Courier New</OnPlatform.iOS>     
+                </OnPlatform> </Label.FontFamily>
+                </Label>
+
+            <Label HorizontalTextAlignment="Center" Text="@ you  P princess  E exits  $ Loot" FontFamily="Courier" FontSize="Small"/>
+            <Label HorizontalTextAlignment="Center" Text="M Monster  f Food  W weapon" FontFamily="Courier" FontSize="Small"/>
+            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Status" x:Name="lblStatus"/>
+            
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="End">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Orientation="Vertical">

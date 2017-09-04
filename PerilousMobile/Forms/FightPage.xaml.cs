@@ -44,8 +44,8 @@ namespace PerilousMobile
 
             monster = App.game.GetCurrentMonster();
 
-            lblCombat.Text = "Combat "+monster.combatPoints.ToString();
-            lblHealth.Text = "Health " + monster.healthPoints.ToString();
+            lblCombat.Text = "Combat : "+monster.combatPoints.ToString();
+            lblHealth.Text = "Health : " + monster.healthPoints.ToString();
             lblName.Text = monster.FullDescription();
 
         }

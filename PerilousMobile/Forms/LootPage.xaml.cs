@@ -29,7 +29,7 @@ namespace PerilousMobile
             InitializeComponent();
             loot = App.game.GetCurrentLoot();
 
-            lblValue.Text = "Value " + loot.lootPoints.ToString();
+            lblValue.Text = "Worth " + loot.lootPoints.ToString();
 			lblName.Text = loot.FullDescription();
 
 		}

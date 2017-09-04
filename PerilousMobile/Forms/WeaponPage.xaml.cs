@@ -31,7 +31,7 @@ namespace PerilousMobile
 
 			weapon = App.game.GetCurrentWeapon();
 
-            lblCombat.Text = "Combat " + weapon.combatPoints.ToString();
+            lblCombat.Text = "Adds " + weapon.combatPoints.ToString() + " Combat";
 			lblName.Text = weapon.FullDescription();
 
 		}

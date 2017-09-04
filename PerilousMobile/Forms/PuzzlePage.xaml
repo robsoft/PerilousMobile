@@ -13,7 +13,7 @@
                     <Label Text="A Puzzle!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
-            <Label Text="Name" x:Name="lblName" FontSize="Large" />
+            <Label HorizontalTextAlignment="Center" Text="Name" x:Name="lblName" FontSize="Large" />
             <Button Text="Solve Puzzle" x:Name="btnDone" Clicked="HandleDoneClicked" />
             <Button Text="Leave" x:Name="btnLeave" Clicked="HandleLeaveClicked" />
         </StackLayout>

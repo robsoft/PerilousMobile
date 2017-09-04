@@ -13,9 +13,9 @@
                     <Label Text="Monster!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
-            <Label x:Name="lblName" FontSize="Large" Text="Name" />
-            <Label x:Name="lblCombat" Text="Combat" />
-            <Label x:Name="lblHealth" Text="Health" />
+            <Label HorizontalTextAlignment="Center" x:Name="lblName" FontSize="Large" Text="Name" />
+            <Label HorizontalTextAlignment="Center" x:Name="lblCombat" Text="Combat" />
+            <Label HorizontalTextAlignment="Center" x:Name="lblHealth" Text="Health" />
             <Button Text="Fight" x:Name="btnFight" Clicked="HandleFightClicked" />
             <Button Text="Bribe" x:Name="btnBribe" Clicked="HandleBribeClicked" />
             <Button Text="Run!" x:Name="btnRun" Clicked="HandleRunClicked" />

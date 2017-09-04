@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.AboutPage"
     Title="About">
 	<ContentPage.Content>
-<StackLayout>
+<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 <Label Text="version 0.01" />
 </StackLayout>
     </ContentPage.Content>
