@@ -1,7 +1,7 @@
 ﻿using System;
 namespace PerilousMobile
 {
-    public partial class GameClass
+    public partial class Game
     {
 
 

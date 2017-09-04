@@ -6,11 +6,11 @@ namespace PerilousMobile
     public partial class App : Application
     {
 
-        public static GameClass game;
+        public static Game game;
 
         public App()
         {
-            game = new GameClass();
+            game = new Game();
 
             InitializeComponent();
 

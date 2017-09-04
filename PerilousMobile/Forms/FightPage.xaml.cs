@@ -13,6 +13,7 @@ namespace PerilousMobile
         async void HandleFightClicked(object sender, System.EventArgs e)
         {
             // for now, we automatically win the fight
+            await DisplayAlert("Fight", "Temp code - you win the fight", "OK");
             App.game.ClearCurrentLocation();
             //App.game.RemoveRandomHealth();
             await Navigation.PopModalAsync();
@@ -20,7 +21,8 @@ namespace PerilousMobile
 
 		async void HandleBribeClicked(object sender, System.EventArgs e)
 		{
-			// for now, we automatically win the fight
+            // for now, we automatically win the fight
+            await DisplayAlert("Bribe", "Temp code - your bribe accepted", "OK");
 			App.game.ClearCurrentLocation();
 			//App.game.RemoveRandomHealth();
 			await Navigation.PopModalAsync();

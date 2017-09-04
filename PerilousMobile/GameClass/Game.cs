@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PerilousMobile
 {
-    public partial class GameClass
+    public partial class Game
     {
 
         public Random rnd;
@@ -205,7 +205,7 @@ namespace PerilousMobile
         }
 
 
-        public GameClass()
+        public Game()
         {
             // attach to our singleton random class
             rnd = Utils.rnd;

@@ -57,8 +57,8 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Text.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game_Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MapItems\MapItemClass.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MapItems\LootClass.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MapItems\FoodClass.cs" />
@@ -100,11 +100,12 @@
       <DependentUpon>WeaponPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)GameClass\WeatherExtras.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Maps.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GameClass\GameClass_Moves.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game_Maps.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game_Moves.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Forms\InventoryPage.xaml.cs">
       <DependentUpon>InventoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game_IO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GameClass\" />
