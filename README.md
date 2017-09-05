@@ -4,15 +4,14 @@
 inspiration (though rapidly moving on from it!)
 http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
 
-29/8/17:
-roughly 1 days work to complete this to playable (no gui)
+4/9/17:
  * saving/resuming game
- * version numbering - 15m
- * combat - plan out first, 45m
+ * ~~version numbering - 15m~~
+ * ~~combat - plan out first, 45m~~
  * ~~android sanity check - 30m~~
- * food - 30m
+ * ~~food - 30m~~
  * weapons - 30m
- * code combat - 90m
+ * ~~code combat - 90m~~
  * puzzle ends in finding a map - 15m
  * princess rescue page - 15m
  * leave swamp page - 15m
@@ -25,7 +24,6 @@ roughly 1 days work to complete this to playable (no gui)
 
 # to-do
 * figure out balances between combat, health, armour
-* actually write combat code
 * better logic in the 'flee/run' randomiser
 * figure out puzzle games and add them in
 * testing for death/game over/no health etc
