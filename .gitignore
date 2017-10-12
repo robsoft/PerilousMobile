@@ -7,3 +7,11 @@ PerilousMobile/iOS/Debug/*
 PerilousMobile/iOS/bin/*
 PerilousMobile/packages/*
 !PerilousMobile/packages/repositories.config
+PerilousMobile/PerilousMobile.Tests.Droid/obj/*
+PerilousMobile/PerilousMobile.Tests.Droid/Debug/*
+PerilousMobile/PerilousMobile.Tests.Droid/bin/*
+PerilousMobile/PerilousMobile.Tests.iOS/obj/*
+PerilousMobile/PerilousMobile.Tests.iOS/Debug/*
+PerilousMobile/PerilousMobile.Tests.iOS/bin/*
+*.apk
+*.ipa
