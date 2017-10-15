@@ -109,14 +109,20 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\perilous1024.png" />
+    <ImageAsset Include="Assets.xcassets\PerilousCoverShot.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\PerilousCoverShot.imageset\FantasyGames.Front.png" />
+    <ImageAsset Include="Assets.xcassets\PlaceHolder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\PlaceHolder.imageset\placeholder.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\robsoft-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\robsoft-076.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\robsoft-152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\robsoft-167.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\PerilousCoverShot.imageset\" />
+    <Folder Include="Assets.xcassets\PlaceHolder.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -132,6 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splashscreen.png" />
+    <BundleResource Include="Resources\RobsoftLogo333x333.png" />
+    <BundleResource Include="Resources\blurryRobsoftLogo135x135.jpeg" />
   </ItemGroup>
   <Import Project="..\PerilousMobile.projitems" Label="Shared" Condition="Exists('..\PerilousMobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

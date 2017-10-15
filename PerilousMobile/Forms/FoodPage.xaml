@@ -13,6 +13,7 @@
                     <Label Text="You found food!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
+            <Image Source="PlaceHolder" />
             <Label HorizontalTextAlignment="Center" x:Name="lblName" FontSize="Large" Text="Name" />
             <Label HorizontalTextAlignment="Center" x:Name="lblHealth" Text="Health" />
             <Button Text="Eat" x:Name="btnEat" Clicked="HandleEatClicked" />

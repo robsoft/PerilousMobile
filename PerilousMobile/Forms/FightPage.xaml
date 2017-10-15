@@ -13,6 +13,7 @@
                     <Label Text="Monster!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
+            <Image Source="PlaceHolder" WidthRequest="120" HeightRequest="120" />
             <Label HorizontalTextAlignment="Center" x:Name="lblMonsterName" FontSize="Large" Text="Name" />
             <Label HorizontalTextAlignment="Center" x:Name="lblMonsterCombat" Text="Combat" />
             <Label HorizontalTextAlignment="Center" x:Name="lblMonsterHealth" Text="Health" />

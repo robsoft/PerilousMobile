@@ -3,6 +3,10 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Label x:Name="lblVersion" Text="version 0.01" />
+            <Label Text="by Dad &amp; Olivia" />
+            <Label Text="(increasingly) loosely inspired by" />
+            <Image Source="PerilousCoverShot" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

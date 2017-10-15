@@ -10,9 +10,13 @@
                     <OnPlatform x:TypeArguments="x:Double" iOS="64" Android="50" />
                 </StackLayout.MinimumHeightRequest>
                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Padding="3,0,0,0">
-                    <Label Text="A Puzzle!" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
+                    <Label Text="A Puzzle!" 
+                    FontAttributes="None" TextColor="#FFFFFF" 
+                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
+            <Image Source="PlaceHolder"/>
             <Label HorizontalTextAlignment="Center" Text="Name" x:Name="lblName" FontSize="Large" />
             <Button Text="Solve Puzzle" x:Name="btnDone" Clicked="HandleDoneClicked" />
             <Button Text="Leave" x:Name="btnLeave" Clicked="HandleLeaveClicked" />

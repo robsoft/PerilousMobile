@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PerilousMobile" x:Class="PerilousMobile.MenuPage"
     Title="Menu">
-<StackLayout HorizontalOptions="Center" VerticalOptions="FillAndExpand">
-        
+    <StackLayout VerticalOptions="Fill">
+    
+<StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
     <Label Text=" " HorizontalOptions="Center" />
     <Label Text="Welcome to" FontAttributes="Italic" HorizontalOptions="Center" />
-    <Label Text="The" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
-    <Label Text="Perilous" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
-    <Label Text="Swamp" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+    <Label Text="The" FontAttributes="Bold,Italic" FontSize="Large" HorizontalOptions="Center" />
+    <Label Text="Perilous" FontAttributes="Bold,Italic" FontSize="Large" HorizontalOptions="Center" />
+    <Label Text="Swamp" FontAttributes="Bold,Italic" FontSize="Large" HorizontalOptions="Center" />
 
     <Label Text=" " HorizontalOptions="Center" />
     <Label Text=" " HorizontalOptions="Center" />
-    <Label Text="options;" FontAttributes="Italic" FontSize="Small" HorizontalOptions="Center" />
-    <Button Text="Resume Game" Clicked="OnResumeClickedHandler" />
-    <Button Text="New Game" Clicked="OnRestartClickedHandler" />
-    <Button Text="About" Clicked="OnAboutClickedHandler" />
-    <Button Text="Help" Clicked="OnHelpClickedHandler" />
+    <Label Text="options;" FontSize="Small" HorizontalOptions="Center" />
+    <Button Text="Resume Game" FontSize="Large" Clicked="OnResumeClickedHandler" IsEnabled="false"/>
+    <Button Text="New Game" FontSize="Large" Clicked="OnRestartClickedHandler" />
+    <Button Text="About" FontSize="Large" Clicked="OnAboutClickedHandler" />
+    <Button Text="Help" FontSize="Large" Clicked="OnHelpClickedHandler" />
         </StackLayout>
-    
+    <StackLayout VerticalOptions="End">
+    <Label FontSize="Small" Text="Robsoft Systems 2017" HorizontalOptions="Center" />
+        </StackLayout>
+        </StackLayout>
 </ContentPage>

@@ -35,8 +35,8 @@ namespace PerilousMobile
 			puzzle = App.game.GetCurrentPuzzle();
 
 			//lblCombat.Text = "Combat " + monster.combatPoints.ToString();
-			//lblHealth.Text = "Health " + monster.healthPoints.ToString();
-			lblName.Text = puzzle.FullDescription();
+            //lblHealth.Text = "Health " + monster.healthPoints.ToString();
+            lblName.Text = puzzle.FullDescription();
         }
     }
 }
