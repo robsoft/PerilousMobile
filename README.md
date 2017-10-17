@@ -1,6 +1,20 @@
 # Perilous Swamp (mobile version)
 "Perilous Swamp"-inspired Xamarin Forms mini game
 
+includes;  
+enumerations, simple classes, xaml forms, await/async, collections  
+https://github.com/robsoft/PerilousMobile/blob/master/PerilousMobile/GameClass/Game_Maps.cs  has some comments :-)   
+
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/NUnit01.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game01.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game02.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game03.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game04.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game05.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game06.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game07.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game08.png  
+
 inspiration (though rapidly moving on from it!)
 http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
 
