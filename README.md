@@ -15,6 +15,9 @@ https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game05.png
 https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game06.png  
 https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game07.png  
 https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game08.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game09.png  
+https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/game10.png  
+
 
 inspiration (though rapidly moving on from it!)
 http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
