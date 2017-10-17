@@ -6,6 +6,8 @@ namespace PerilousMobile
     public partial class Game
     {
 
+        // todo start converting these to private fields with get/set etc
+
         public Random rnd;
 		public int xPlayer = 0;
 		public int yPlayer = 0;
@@ -32,7 +34,7 @@ namespace PerilousMobile
 		public int armourPoints = 0;
 		public int lootPoints = 0;
 		public int combatPoints = 0;
-		private bool foundPrincess = false;
+		public bool foundPrincess = false;
 
 		private MapContent[,] map = new MapContent[xDim, yDim];
 

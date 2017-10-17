@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Forms/FightPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PerilousMobile.Tests/TestWrapperClass.cs">
     <Files>
-      <File FileName="GameClass/Game.cs" Line="14" Column="31" />
-      <File FileName="Forms/FoodPage.xaml" Line="13" Column="1" />
-      <File FileName="Forms/FightPage.xaml" Line="15" Column="27" />
+      <File FileName="GameClass/Game.cs" Line="36" Column="9" />
+      <File FileName="PerilousMobile.Tests/TestWrapperClass.cs" Line="48" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />

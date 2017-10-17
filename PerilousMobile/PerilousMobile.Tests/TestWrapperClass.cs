@@ -15,11 +15,13 @@ namespace PerilousMobile.Tests
         [SetUp]
         protected void Setup()
         {
+            // setup a game class prior to testing
             game = new Game();
         }
 
+
         [Test]
-        public void IsNull()
+        public void IsNull()    // silly test that NUnit & Xamarin Runner stuff is all in place
         {
             object nada = null;
             Assert.IsNull(nada);
@@ -29,11 +31,22 @@ namespace PerilousMobile.Tests
             Expect(nada, Null);
         }
 
+
         [Test]
-        public void CheckGameHealthPointsOver10()
+        // after an initial reset, the value of healthPoints should always exceed 10
+        public void CheckGameHealthPointsOver10AtStartOfGame()
         {
+            game.Reset();
             Assert.That(game.healthPoints, Is.GreaterThan(10));
-            Assert.That(game.healthPoints, Is.LessThan(10));
         }
+
+        [Test]
+        // after an initial reset, the princess found flag should be false
+        public void CheckNotFoundPrincessAtStartOfGame()
+        {
+            game.Reset();
+            Assert.False(game.foundPrincess);
+        }
+
     }
 }
