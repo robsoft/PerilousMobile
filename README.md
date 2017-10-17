@@ -1,5 +1,6 @@
 # Perilous Swamp (mobile version)
 "Perilous Swamp"-inspired Xamarin Forms mini game
+game logic 75% completed, awaiting remainder (see below) and then graphics for placeholders & map
 
 includes;  
 enumerations, simple classes, xaml forms, await/async, collections  
