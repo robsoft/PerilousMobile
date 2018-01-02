@@ -1,8 +1,13 @@
 ﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PerilousMobile.Tests/TestWrapperClass.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Forms/PlayerPage.xaml">
     <Files>
-      <File FileName="GameClass/Game.cs" Line="36" Column="9" />
-      <File FileName="PerilousMobile.Tests/TestWrapperClass.cs" Line="48" Column="43" />
+      <File FileName="GameClass/Game.cs" Line="18" Column="9" />
+      <File FileName="GameClass/Game_Text.cs" Line="1" Column="1" />
+      <File FileName="MapItems/MonsterClass.cs" Line="10" Column="35" />
+      <File FileName="Forms/PlayerPage.xaml.cs" Line="152" Column="61" />
+      <File FileName="GameClass/Game_Maps.cs" Line="1" Column="1" />
+      <File FileName="GameClass/Game_Moves.cs" Line="64" Column="9" />
+      <File FileName="Forms/PlayerPage.xaml" Line="19" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
@@ -11,7 +16,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.PerilousMobile.Droid PreferredExecutionTarget="Android.HT4B4JT03663" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.PerilousMobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7FCC9ED2-834F-40FB-B2CA-460BCA3473E1" />
+  <MonoDevelop.Ide.ItemProperties.PerilousMobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CBEF1B9C-E6C6-4B16-84EC-6B150333473A" />
   <MonoDevelop.Ide.ItemProperties.PerilousMobile.Tests.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7FCC9ED2-834F-40FB-B2CA-460BCA3473E1">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.PerilousMobile.Tests.iOS>

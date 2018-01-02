@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace PerilousMobile
 {
-    public partial class HelpPage : ContentPage
+    public partial class BackStoryPage : ContentPage
     {
-        public HelpPage()
+        public BackStoryPage()
         {
             InitializeComponent();
         }

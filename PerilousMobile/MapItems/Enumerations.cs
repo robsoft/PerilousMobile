@@ -19,6 +19,7 @@ namespace PerilousMobile
         maze,
         reflex_test,
         riddle,
+        spin_the_wheel,
         sum
     }
 
@@ -69,7 +70,12 @@ namespace PerilousMobile
         crown,
         braclet,
         plate,
-        goblet
+        goblet,
+        decorative_dagger,
+        necklace,
+        head_dress,
+        shoe,
+        belt
     }
 
     public enum LootDescriptions
@@ -93,7 +99,14 @@ namespace PerilousMobile
         stew,
         broth,
         hunk_of_meat,
-		cabbage
+		cabbage,
+        potato,
+        cake,
+        loaf_of_bread,
+        leg_of_chicken,
+        rib_of_meat,
+        chicken_breast,
+        onion
 	}
 
     public enum FoodDescriptions
@@ -109,7 +122,13 @@ namespace PerilousMobile
         part_cooked,
         part_eaten,
         regurgitated,
-        mouldy
+        mouldy,
+        worm_infested,
+        fresh,
+        stinking,
+        ponging,
+        reeking,
+        rotten
     }
 
 
@@ -131,6 +150,12 @@ namespace PerilousMobile
         violent,
         furious,
         confused,
+        snarling,
+        ferocious,
+        evil,
+        cruel,
+        corpulent,
+        diseased,
         cunning,
         devious,
         bloody,
@@ -149,6 +174,7 @@ namespace PerilousMobile
         ring_wraith,
         troll,
         goblin,
+        demon_horse,
         dwarf,
         elf,
         wraith,
@@ -156,8 +182,9 @@ namespace PerilousMobile
         vulture,
         giant_spider,
         giant_rat,
-        wild_feline,
+        wild_cat                                                                                  ,
         wolf,
+        grizzly_bear,
         giant_parasite_worm
     }
 

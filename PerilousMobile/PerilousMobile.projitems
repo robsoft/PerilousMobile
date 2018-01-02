@@ -20,7 +20,7 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\FoodPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\HelpPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\BackStoryPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\LeavePage.xaml">
@@ -72,8 +72,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Forms\FoodPage.xaml.cs">
       <DependentUpon>FoodPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Forms\HelpPage.xaml.cs">
-      <DependentUpon>HelpPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Forms\BackStoryPage.xaml.cs">
+      <DependentUpon>BackStoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Forms\LeavePage.xaml.cs">
       <DependentUpon>LeavePage.xaml</DependentUpon>

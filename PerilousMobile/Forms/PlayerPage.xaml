@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.PlayerPage" Title="Perilous Swamp">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Status" 
+            Margin="0,20,0,10" x:Name="lblStatus"/>
+
             <Label HorizontalTextAlignment="Center" Text="map here" FontFamily="Courier" x:Name="lblMap">
                                 <Label.FontFamily>     
                 <OnPlatform x:TypeArguments="x:String">         
@@ -10,27 +13,33 @@
                 </OnPlatform> </Label.FontFamily>
                 </Label>
 
+            <Button Text="Show Key" x:Name="btnKey" 
+              VerticalOptions="End" Clicked="OnShowKeyClickedHandler" />
+            
+            <StackLayout x:Name="stkKey" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="End">
             <Label HorizontalTextAlignment="Center" Text="@ you  P princess  E exits  $ Loot" FontFamily="Courier" FontSize="Small"/>
             <Label HorizontalTextAlignment="Center" Text="M Monster  f Food  W weapon" FontFamily="Courier" FontSize="Small"/>
-            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Status" x:Name="lblStatus"/>
-            
-            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            </StackLayout>
+
+            <StackLayout x:Name="stkMoves" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="End">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal">
-                            <Button Text="NW" Clicked="OnMoveClickedHandler" />
-                            <Button Text="N" Clicked="OnMoveClickedHandler" />
-                            <Button Text="NE" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnNW" Text="NW" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnNO" Text="No" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnNE" Text="NE" Clicked="OnMoveClickedHandler" />
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Button Text="W" Clicked="OnMoveClickedHandler" />
-                            <Button Text="I" Clicked="OnInventoryClickedHandler" />
-                            <Button Text="E" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnWE" Text="We" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnInv" Text="Inv" Clicked="OnInventoryClickedHandler" />
+                            <Button x:Name="btnEA" Text="Ea" Clicked="OnMoveClickedHandler" />
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Button Text="SW" Clicked="OnMoveClickedHandler" />
-                            <Button Text="S" Clicked="OnMoveClickedHandler" />
-                            <Button Text="SE" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnSW" Text="SW" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnSO" Text="So" Clicked="OnMoveClickedHandler" />
+                            <Button x:Name="btnSE" Text="SE" Clicked="OnMoveClickedHandler" />
                         </StackLayout>
                     </StackLayout>
                     <StackLayout HorizontalOptions="End" Orientation="Vertical">
@@ -39,7 +48,6 @@
                         <Label FontFamily="Courier" Text="Combat Points" x:Name="lblCombat" />
                         <Label FontFamily="Courier" Text="Armour Points" x:Name="lblArmour" />
                         <Label FontFamily="Courier" Text="Loot" x:Name="lblLoot" />
-<!--                        <Label FontFamily="Courier" Text="Wind" x:Name="lblWind" />-->
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

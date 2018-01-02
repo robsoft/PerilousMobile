@@ -31,9 +31,9 @@ namespace PerilousMobile
 
         }
 
-        async void OnHelpClickedHandler (object sender, System.EventArgs e)
+        async void OnBackStoryClickedHandler (object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync (new HelpPage ());
+            await Navigation.PushAsync (new BackStoryPage ());
         }
 
         public MenuPage()

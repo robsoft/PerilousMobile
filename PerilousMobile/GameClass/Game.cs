@@ -17,8 +17,8 @@ namespace PerilousMobile
 		public bool gameOver = false;
 
 		private const int internalVersion = 1;
-        private const int xDim = 28;
-        private const int yDim = 18;
+        private const int xDim = 29;
+        private const int yDim = 17;
         private const int noMapViewableSize = 3;
 
         private const int lootCount = (int)((xDim * yDim) * 0.02);

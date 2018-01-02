@@ -4,6 +4,63 @@ namespace PerilousMobile
     public partial class Game
     {
 
+        public bool CanMoveN()
+        {
+            int y = yPlayer - 1;
+            return ((CoordInRange(xPlayer, y) == true) && (map[xPlayer, y] != MapContent.InvalidSpace));
+        }
+
+        public bool CanMoveS()
+        {
+            int y = yPlayer + 1;
+            return ((CoordInRange(xPlayer, y) == true) && (map[xPlayer, y] != MapContent.InvalidSpace));
+        }
+        public bool CanMoveE()
+        {
+            int x = xPlayer + 1;
+            return ((CoordInRange(x, yPlayer) == true) && (map[x, yPlayer] != MapContent.InvalidSpace));
+        }
+        public bool CanMoveW()
+        {
+            int x = xPlayer - 1;
+            return ((CoordInRange(x, yPlayer) == true) && (map[x, yPlayer] != MapContent.InvalidSpace));
+        }
+
+        public bool CanMoveNE()
+        {
+            int y = yPlayer - 1;
+            int x = xPlayer + 1;
+            return ((CoordInRange(x, y) == true) && (map[x, y] != MapContent.InvalidSpace));
+        }
+
+        public bool CanMoveNW()
+        {
+            int y = yPlayer - 1;
+            int x = xPlayer - 1;
+            return ((CoordInRange(x, y) == true) && (map[x, y] != MapContent.InvalidSpace));
+        }
+        public bool CanMoveSE()
+        {
+            int y = yPlayer + 1;
+            int x = xPlayer + 1;
+            return ((CoordInRange(x, y) == true) && (map[x, y] != MapContent.InvalidSpace));
+        }
+        public bool CanMoveSW()
+        {
+            int y = yPlayer + 1;
+            int x = xPlayer - 1;
+            return ((CoordInRange(x, y) == true) && (map[x, y] != MapContent.InvalidSpace));
+        }
+
+        public bool CanInventory()
+        {
+            return true;
+        }
+
+        public bool CanShowKey()
+        {
+            return true;
+        }
 
         private void DecreaseHealthForMove()
         {

@@ -10,6 +10,8 @@ namespace PerilousMobile
     public partial class PlayerPage : ContentPage
     {
 
+        private bool showKey = false;
+
 		async protected override void OnAppearing()
 		{
 			base.OnAppearing();
@@ -34,6 +36,12 @@ namespace PerilousMobile
             App.game.CompleteTurn();
 
             ProcessMove();
+        }
+
+        private void OnShowKeyClickedHandler(object sender, System.EventArgs e)
+        {
+            showKey = !showKey;
+            RedrawMap();
         }
 
         private void ProcessMove()
@@ -127,7 +135,22 @@ namespace PerilousMobile
             lblCombat.Text = "  Combat : " + App.game.GetCombatText();
             lblArmour.Text = "  Armour : " + App.game.GetArmourText();
             lblHealth.Text = "  Health : " + App.game.GetHealthText();
-            //lblWind.Text =   " Wind   : " + App.game.GetWindText();
+            btnNW.IsEnabled = App.game.CanMoveNW();
+            btnNO.IsEnabled = App.game.CanMoveN();
+            btnNE.IsEnabled = App.game.CanMoveNE();
+            btnWE.IsEnabled = App.game.CanMoveW();
+            btnEA.IsEnabled = App.game.CanMoveE();
+            btnSW.IsEnabled = App.game.CanMoveSW();
+            btnSO.IsEnabled = App.game.CanMoveS();
+            btnSE.IsEnabled = App.game.CanMoveSE();
+            btnInv.IsEnabled = App.game.CanInventory();
+            btnKey.IsEnabled = App.game.CanShowKey();
+
+            // test showKey etc
+            stkMoves.IsVisible = !showKey;
+            stkKey.IsVisible = showKey;
+            btnKey.Text = showKey ? "Hide Key" : "Show Key";
+
 		}
 
         public PlayerPage()
