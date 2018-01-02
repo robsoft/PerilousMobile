@@ -143,6 +143,7 @@
     <BundleResource Include="Resources\splashscreen.png" />
     <BundleResource Include="Resources\RobsoftLogo333x333.png" />
     <BundleResource Include="Resources\blurryRobsoftLogo135x135.jpeg" />
+    <BundleResource Include="Resources\SimpleTick.png" />
   </ItemGroup>
   <Import Project="..\PerilousMobile.projitems" Label="Shared" Condition="Exists('..\PerilousMobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

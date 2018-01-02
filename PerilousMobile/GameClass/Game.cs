@@ -3,10 +3,19 @@ using System.Collections.Generic;
 
 namespace PerilousMobile
 {
+    public enum GameState
+    {
+        isReadyToStart,
+        isInPlay,
+        isOver
+    }
+
     public partial class Game
     {
 
         // todo start converting these to private fields with get/set etc
+
+        public GameState currentState = GameState.isOver;
 
         public Random rnd;
 		public int xPlayer = 0;
@@ -202,6 +211,11 @@ namespace PerilousMobile
             combatPoints = rnd.Next(1, 21);
         }
 
+        public void PrepareToStart()
+        {
+            // adjust stats here based on selections etc
+
+        }
 
         public Game()
         {

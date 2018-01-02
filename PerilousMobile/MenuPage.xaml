@@ -11,8 +11,8 @@
     <Label Text=" " HorizontalOptions="Center" />
     <Label Text=" " HorizontalOptions="Center" />
     <Button Text="The Back Story..." FontSize="Large" Clicked="OnBackStoryClickedHandler" />
-    <!--<Button Text="Resume Game" FontSize="Large" Clicked="OnResumeClickedHandler" IsEnabled="false"/>-->
-    <Button Text="Start New Game" FontSize="Large" Clicked="OnRestartClickedHandler" />
+    <Button Text="Start New Game" FontSize="Large" Clicked="OnStartClickedHandler" />
+    <Button x:Name="btnResume" Text="Resume Game" FontSize="Large" IsEnabled="false" Clicked="OnResumeClickedHandler" />
     <Button Text="About" FontSize="Large" Clicked="OnAboutClickedHandler" />
         </StackLayout>
     <StackLayout VerticalOptions="End">

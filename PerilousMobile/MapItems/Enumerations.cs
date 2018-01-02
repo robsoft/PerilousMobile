@@ -1,6 +1,90 @@
 ﻿using System;
 namespace PerilousMobile
 {
+    public enum MaleDescriptions
+    {
+        a_handsome,
+        a_kind,
+        a_fearless,
+        a_muscular,
+        a_feeble,
+        a_charming,
+        an_exotic,
+        a_snivelling,
+        an_angry,
+        a_fearful,
+        a_brave,
+        a_cowardly,
+        a_cunning,
+        an_easily_upset,
+        a_bemused
+    }
+
+    public enum MaleKinds
+    {
+        prince,
+        soldier,
+//        chef,
+        blacksmith,
+//        wagon_driver,
+//        dentist,
+//        middle_manager,
+        stable_boy,
+        old_man,
+        wizard
+    }
+    public enum FemaleDescriptions
+    {
+        a_beautiful,
+        a_striking,
+        an_attractive,
+        a_kind_hearted,
+        a_voluptuous,
+        a_buxom,
+        a_witheringly_sarcastic,
+        an_angry,
+        a_fearful,
+        a_brave,
+        a_cowardly,
+        a_cunning,
+        an_easily_upset,
+        a_bemused
+    }
+
+    public enum FemaleKinds
+    {
+        princess,
+        maid,
+//        hairdresser,
+//        model,
+//        school_teacher,
+//        zoologist,
+//        female_super_hero,
+//        lady_villan,
+        lady,
+        girl,
+        old_woman,
+        young_woman,
+        enchantress,
+        witch
+    }
+    public enum FrogDescriptions
+    {
+        an_enchanted,
+        a_disenchanted,
+        an_entry_level,
+        a_cunning,
+        an_eloquent,
+        a_mysterious
+    }
+    public enum FrogKinds
+    {
+        frog,
+        toad,
+        amphibian,
+        two_legged_fish
+    }
+
     public enum MapContent
     {
         ClearSpace,
@@ -204,21 +288,8 @@ namespace PerilousMobile
 
     public enum PrincessDescriptions
     {
-        kind,
-        voluptuous,
-        buxom,
-        sarcastic,
-        withering,
-        hearty,
-        snivelling,
-        angry,
-        fearful,
-        brave,
-        cowardly,
-        cunning,
-        upset,
-        bemused,
-        grateful
+        a,
+        b
     }
 
     public enum WeatherContent

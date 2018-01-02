@@ -8,7 +8,9 @@ namespace PerilousMobile
 
         public static string StripForDisplay(string text)
         {
-          return text.Replace("_", "-");
+            string raw = text.Replace("=", "-");
+            raw = raw.Replace("_", " ");
+            return raw;
         
         }
     }

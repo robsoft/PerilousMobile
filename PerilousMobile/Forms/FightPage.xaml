@@ -18,15 +18,16 @@
             <Label HorizontalTextAlignment="Center" x:Name="lblMonsterCombat" Text="Combat" />
             <Label HorizontalTextAlignment="Center" x:Name="lblMonsterHealth" Text="Health" />
             <Label HorizontalTextAlignment="Center" x:Name="lblMonsterLoot" Text="Loot" />
-            <Label HorizontalTextAlignment="Center" FontSize="Large" Text="-" />
             <Label HorizontalTextAlignment="Center" FontSize="Large" Text="You" />
             <Label HorizontalTextAlignment="Center" x:Name="lblPlayerCombat" Text="Combat" />
             <Label HorizontalTextAlignment="Center" x:Name="lblPlayerHealth" Text="Health" />
             <Label HorizontalTextAlignment="Center" x:Name="lblPlayerArmour" Text="Armour" />
             <Label HorizontalTextAlignment="Center" x:Name="lblPlayerLoot" Text="Loot" />
-            <Button Text="Fight" x:Name="btnFight" Clicked="HandleFightClicked" />
-            <Button Text="Bribe" x:Name="btnBribe" Clicked="HandleBribeClicked" />
-            <Button Text="Run!" x:Name="btnRun" Clicked="HandleRunClicked" />
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+                <Button Text="Fight" x:Name="btnFight" Clicked="HandleFightClicked" Margin="10,20,30,20" />
+                <Button Text="Bribe" x:Name="btnBribe" Clicked="HandleBribeClicked" Margin="20,20,20,20" />
+                <Button Text="Run!" x:Name="btnRun" Clicked="HandleRunClicked" Margin="30,20,10,20" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
