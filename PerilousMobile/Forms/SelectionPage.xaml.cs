@@ -21,44 +21,95 @@ namespace PerilousMobile
         private FemaleDescriptions femaleDescQuest;
         private FrogKinds frogKindQuest;
         private FrogDescriptions frogDescQuest;
+        private GeneralQuests generalQuest;
+        private RandomQuests randomQuest;
+
+        private int quest = 0;
+        private int opt = 0;
 
         public SelectionPage()
         {
             InitializeComponent();
             CreateQuest();
             UpdateGameDetails();
+
+            imgOpt1.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleOptClicked(imgOpt1, null)), });
+            imgOpt2.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleOptClicked(imgOpt2, null)), });
+            imgOpt3.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleOptClicked(imgOpt3, null)), });
+
+            imgQuest1.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleQuestClicked(imgQuest1, null)), });
+            imgQuest2.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleQuestClicked(imgQuest2, null)), });
+            imgQuest3.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleQuestClicked(imgQuest3, null)), });
+            imgQuest4.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleQuestClicked(imgQuest4, null)), });
+            imgQuest5.GestureRecognizers.Add(new TapGestureRecognizer { 
+                Command = new Command(() => HandleQuestClicked(imgQuest5, null)), });
+
         }
         void HandleOptClicked(object sender, System.EventArgs e)
         {
-            imgOpt1.IsVisible = false;
-            imgOpt2.IsVisible = false;
-            imgOpt3.IsVisible = false;
+            
+            imgOpt1.Text = UserControls.Icon.FASquare;
+            imgOpt2.Text = UserControls.Icon.FASquare;
+            imgOpt3.Text = UserControls.Icon.FASquare;
 
-            if (sender == lblOpt1) { imgOpt1.IsVisible = true; }
-            else
-                if (sender == lblOpt2) { imgOpt2.IsVisible = true; }
-            else
-                if (sender == lblOpt3) { imgOpt3.IsVisible = true; }
-
+            if ((sender == lblOpt1) || (sender == imgOpt1))
+            { 
+                imgOpt1.Text = UserControls.Icon.FACheckSquare; 
+                opt = 1; 
+            }
+            else if ((sender == lblOpt2) || (sender == imgOpt2))
+            { 
+                imgOpt2.Text = UserControls.Icon.FACheckSquare; 
+                opt = 2; 
+            }
+            else if ((sender == lblOpt3) || (sender == imgOpt3))
+            {
+                imgOpt3.Text = UserControls.Icon.FACheckSquare; 
+                opt = 3; 
+            }
         }
 
 
         void HandleQuestClicked(object sender, System.EventArgs e)
         {
-            imgQuest1.IsVisible = false;
-            imgQuest2.IsVisible = false;
-            imgQuest3.IsVisible = false;
-            imgQuest4.IsVisible = false;
-            imgQuest5.IsVisible = false;
-            if (sender == lblQuest1) { imgQuest1.IsVisible = true; }
-            else
-                if (sender == lblQuest2) { imgQuest2.IsVisible = true; }
-            else
-                if (sender == lblQuest3) { imgQuest3.IsVisible = true; }
-            else
-                if (sender == lblQuest4) { imgQuest4.IsVisible = true; }
-            else
-                if (sender == lblQuest5) { imgQuest5.IsVisible = true; }
+            imgQuest1.Text = UserControls.Icon.FASquare;
+            imgQuest2.Text = UserControls.Icon.FASquare;
+            imgQuest3.Text = UserControls.Icon.FASquare;
+            imgQuest4.Text = UserControls.Icon.FASquare;
+            imgQuest5.Text = UserControls.Icon.FASquare;
+
+            if ((sender == lblQuest1) || (sender == imgQuest1))
+            {
+                imgQuest1.Text = UserControls.Icon.FACheckSquare;
+                quest = 1;
+            }
+            else if ((sender == lblQuest2) || (sender == imgQuest2))
+            {
+                imgQuest2.Text = UserControls.Icon.FACheckSquare;
+                quest = 2;
+            }
+            else if ((sender == lblQuest3) || (sender == imgQuest3))
+            {
+                imgQuest3.Text = UserControls.Icon.FACheckSquare;
+                quest = 3;
+            }
+            else if ((sender == lblQuest4) || (sender == imgQuest4))
+            {
+                imgQuest4.Text = UserControls.Icon.FACheckSquare;
+                quest = 4;
+            }
+            else if ((sender == lblQuest5) || (sender == imgQuest5))
+            {
+                imgQuest5.Text = UserControls.Icon.FACheckSquare;
+                quest = 5;
+            }
 
         }
 
@@ -97,6 +148,9 @@ namespace PerilousMobile
             lblQuest2.Text = Utils.StripForDisplay(maleDescQuest.ToString() + " " + maleKindQuest.ToString());
             lblQuest3.Text = Utils.StripForDisplay(frogDescQuest.ToString() + " " + frogKindQuest.ToString());
 
+            lblQuest4.Text = Utils.StripForDisplay(generalQuest.ToString());
+            lblQuest5.Text = Utils.StripForDisplay(randomQuest.ToString());
+
             HandleOptClicked(lblOpt1, null);
             HandleQuestClicked(lblQuest1, null);
         }
@@ -127,7 +181,10 @@ namespace PerilousMobile
             frogDescOpt = (FrogDescriptions)values.GetValue(Utils.rnd.Next(values.Length));
             frogDescQuest = (FrogDescriptions)values.GetValue(Utils.rnd.Next(values.Length));
 
-
+            values = Enum.GetValues(typeof(GeneralQuests));
+            generalQuest = (GeneralQuests)values.GetValue(Utils.rnd.Next(values.Length));
+            values = Enum.GetValues(typeof(RandomQuests));
+            randomQuest = (RandomQuests)values.GetValue(Utils.rnd.Next(values.Length));
         }
 
     }

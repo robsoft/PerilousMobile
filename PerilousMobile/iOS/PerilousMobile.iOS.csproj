@@ -123,6 +123,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Assets.xcassets\PerilousCoverShot.imageset\" />
     <Folder Include="Assets.xcassets\PlaceHolder.imageset\" />
+    <Folder Include="Resources\Fonts\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -144,6 +145,7 @@
     <BundleResource Include="Resources\RobsoftLogo333x333.png" />
     <BundleResource Include="Resources\blurryRobsoftLogo135x135.jpeg" />
     <BundleResource Include="Resources\SimpleTick.png" />
+    <BundleResource Include="Resources\Fonts\FontAwesome.otf" />
   </ItemGroup>
   <Import Project="..\PerilousMobile.projitems" Label="Shared" Condition="Exists('..\PerilousMobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

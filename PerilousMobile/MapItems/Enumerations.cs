@@ -85,6 +85,26 @@ namespace PerilousMobile
         two_legged_fish
     }
 
+    public enum GeneralQuests
+    {
+        anyone_who_can_bring_you_wealth,
+        anyone_who_can_bring_you_joy,
+        yourself_once_again,
+        your_purpose_in_life,
+        a_challenge
+    }
+
+    public enum RandomQuests
+    {
+        a_random_adventure,
+        a_shambolic_skirmish,
+        an_enlightening_escapade,
+        an_Orc_filled_odyssey,
+        a_witch_whacking_whimsy,
+        a_dragon_dodging_diversion,
+        a_treasure_trove_of_trouble
+    }
+
     public enum MapContent
     {
         ClearSpace,

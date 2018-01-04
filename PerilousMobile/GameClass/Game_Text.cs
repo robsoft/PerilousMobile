@@ -1,4 +1,6 @@
 ﻿using System;
+using Xamarin.Forms;
+
 namespace PerilousMobile
 {
 	public partial class Game
@@ -34,6 +36,12 @@ namespace PerilousMobile
 			return mapText;
 		}
 
+        public void MapIntoGrid(Grid gv)
+        {
+            
+        }
+
+
 		public string MapDecodeText(MapContent content)
 		{
 			switch (content)
@@ -54,6 +62,25 @@ namespace PerilousMobile
 			}
 		}
 
+        public string MapDecodeGlyphFont(MapContent content)
+        {
+            switch (content)
+            {
+                case MapContent.ClearSpace: return " ";
+                case MapContent.InvalidSpace: return "X";
+                case MapContent.PrincessSpace: return "P";
+                case MapContent.ExitSpace: return "E";
+                case MapContent.LootSpace: return "$";
+                case MapContent.PuzzleSpace: return "?";
+                case MapContent.MonsterSpace: return "M";
+                case MapContent.WeaponSpace: return "w";
+                case MapContent.FoodSpace: return "f";
+                default:
+                    {
+                        return ".";
+                    }
+            }
+        }
 	
 		public string WorldDecodeText(int x, int y)
 		{

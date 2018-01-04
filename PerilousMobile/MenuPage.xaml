@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PerilousMobile" x:Class="PerilousMobile.MenuPage"
-    Title="Menu">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PerilousMobile" xmlns:userControls="clr-namespace:PerilousMobile.UserControls" x:Class="PerilousMobile.MenuPage" Title="Menu">
     <StackLayout VerticalOptions="Fill">
-    
-<StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-    <Label Text=" " HorizontalOptions="Center" />
-    <Label Text="Welcome to" FontAttributes="Italic" HorizontalOptions="Center" />
-    <Label Text="The Perilous Swamp" FontAttributes="Bold,Italic" FontSize="Large" HorizontalOptions="Center" />
-
-    <Label Text=" " HorizontalOptions="Center" />
-    <Label Text=" " HorizontalOptions="Center" />
-    <Button Text="The Back Story..." FontSize="Large" Clicked="OnBackStoryClickedHandler" />
-    <Button Text="Start New Game" FontSize="Large" Clicked="OnStartClickedHandler" />
-    <Button x:Name="btnResume" Text="Resume Game" FontSize="Large" IsEnabled="false" Clicked="OnResumeClickedHandler" />
-    <Button Text="About" FontSize="Large" Clicked="OnAboutClickedHandler" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FAGem}" 
+                VerticalOptions="Center" FontSize="36" TextColor="Red" />
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FAShieldAlt}" 
+                VerticalOptions="Center" FontSize="48" TextColor="CornflowerBlue" />
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FAHandRockO}" 
+                VerticalOptions="Center" FontSize="40" TextColor="LightGreen" />
+            </StackLayout>
+            <Label Text="Welcome to" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,10,0,10"/>
+            <Label Text="The Perilous Swamp" FontAttributes="Bold,Italic" FontSize="32" HorizontalOptions="Center" />
+            <Label Text=" " HorizontalOptions="Center" />
+            <Button Text="The Story..." FontSize="Large" Clicked="OnBackStoryClickedHandler" />
+            <Button Text="Start New Game" FontSize="Large" Clicked="OnStartClickedHandler" />
+            <Button x:Name="btnResume" Text="Resume Game" FontSize="Large" IsEnabled="false" Clicked="OnResumeClickedHandler" />
+            <Button Text="About" FontSize="Large" Clicked="OnAboutClickedHandler" />
         </StackLayout>
-    <StackLayout VerticalOptions="End">
-    <Label FontSize="Small" Text="(c) Robsoft Systems 2018" HorizontalOptions="Center" />
+        <StackLayout VerticalOptions="End">
+            <Label FontSize="Small" Text="(c) Robsoft Systems 2018" HorizontalOptions="Center" />
         </StackLayout>
-        </StackLayout>
+    </StackLayout>
 </ContentPage>

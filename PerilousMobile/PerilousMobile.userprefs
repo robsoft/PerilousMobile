@@ -1,26 +1,19 @@
 ﻿<Properties StartupConfiguration="{565F4C1A-4371-4790-A764-DC046C815221}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapItems/Enumerations.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Forms/SelectionPage.xaml.cs">
     <Files>
-      <File FileName="GameClass/Game.cs" Line="33" Column="34" />
-      <File FileName="Forms/SelectionPage.xaml" Line="13" Column="51" />
-      <File FileName="Forms/SelectionPage.xaml.cs" Line="43" Column="10" />
-      <File FileName="MapItems/Enumerations.cs" Line="109" Column="5" />
-      <File FileName="GameClass/Game_Maps.cs" Line="170" Column="42" />
-      <File FileName="MapItems/MonsterClass.cs" Line="19" Column="23" />
-      <File FileName="GameClass/Game_Text.cs" Line="1" Column="1" />
-      <File FileName="GameClass/Game_IO.cs" Line="1" Column="1" />
-      <File FileName="Forms/FightPage.xaml.cs" Line="170" Column="43" />
-      <File FileName="iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="Utils.cs" Line="11" Column="18" />
+      <File FileName="Forms/SelectionPage.xaml" Line="19" Column="37" />
+      <File FileName="Forms/SelectionPage.xaml.cs" Line="188" Column="10" />
+      <File FileName="MenuPage.xaml" Line="12" Column="27" />
+      <File FileName="MapItems/Enumerations.cs" Line="107" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.PerilousMobile.Droid PreferredExecutionTarget="Android.HT4B4JT03663" />
+  <MonoDevelop.Ide.ItemProperties.PerilousMobile.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.PerilousMobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EA10540E-CB96-47B5-8FDC-E224B7FE39E9" />
+  <MonoDevelop.Ide.ItemProperties.PerilousMobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5DEAC3FC-A0B1-4943-81F6-A7C47AF1EEE1" automaticSigning="False" />
   <MonoDevelop.Ide.ItemProperties.PerilousMobile.Tests.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7FCC9ED2-834F-40FB-B2CA-460BCA3473E1">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.PerilousMobile.Tests.iOS>

@@ -113,6 +113,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Forms\SelectionPage.xaml.cs">
       <DependentUpon>SelectionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FontAwesomeLabel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GameClass\" />

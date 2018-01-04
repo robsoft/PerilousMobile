@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.SelectionPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:userControls="clr-namespace:PerilousMobile.UserControls" 
+    x:Class="PerilousMobile.SelectionPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <StackLayout BackgroundColor="#39757F" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
@@ -13,7 +16,7 @@
                     <Label Text="Choose Your Quest" FontAttributes="None" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16" />
                 </StackLayout>
             </StackLayout>
-            <Grid>
+            <Grid Margin="15,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40" />
                     <RowDefinition Height="40" />
@@ -24,15 +27,23 @@
                     <ColumnDefinition Width="70" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
+                
                 <Label HorizontalTextAlignment="Center" Text="You are ..." Margin="0,5,0,10" Grid.Row="0" Grid.Column="1" />
-                <Image x:Name="imgOpt1" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="1" Grid.Column="0" />
+                
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="1" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue" x:Name="imgOpt1" />
                 <Button x:Name="lblOpt1" Text="Opt1" Clicked="HandleOptClicked" Grid.Row="1" Grid.Column="1" />
-                <Image x:Name="imgOpt2" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="2" Grid.Column="0" />
+                
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="2" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue"  x:Name="imgOpt2" />
                 <Button x:Name="lblOpt2" Text="Opt2" Clicked="HandleOptClicked" Grid.Row="2" Grid.Column="1" />
-                <Image x:Name="imgOpt3" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="3" Grid.Column="0" />
+                
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="3" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue"  x:Name="imgOpt3" />
                 <Button x:Name="lblOpt3" Text="Opt3" Clicked="HandleOptClicked" Grid.Row="3" Grid.Column="1" />
+                
             </Grid>
-            <Grid>
+            <Grid Margin="15,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60" />
                     <RowDefinition Height="40" />
@@ -46,15 +57,25 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Label HorizontalTextAlignment="Center" Text="... and you want to find ..." Margin="0,20,0,10" Grid.Row="0" Grid.Column="1" />
-                <Image x:Name="imgQuest1" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="30" HeightRequest="30" Grid.Row="1" Grid.Column="0" />
+
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="1" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue" x:Name="imgQuest1" />
                 <Button x:Name="lblQuest1" Text="Quest1" Clicked="HandleQuestClicked" Grid.Row="1" Grid.Column="1" />
-                <Image x:Name="imgQuest2" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="2" Grid.Column="0" />
+
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="2" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue" x:Name="imgQuest2" />
                 <Button x:Name="lblQuest2" Text="Quest2" Clicked="HandleQuestClicked" Grid.Row="2" Grid.Column="1" />
-                <Image x:Name="imgQuest3" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="3" Grid.Column="0" />
+                
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="3" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue" x:Name="imgQuest3" />
                 <Button x:Name="lblQuest3" Text="Quest3" Clicked="HandleQuestClicked" Grid.Row="3" Grid.Column="1" />
-                <Image x:Name="imgQuest4" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="4" Grid.Column="0" />
+
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="4" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue" x:Name="imgQuest4" />
                 <Button x:Name="lblQuest4" Text="anyone who can bring you wealth" Clicked="HandleQuestClicked" Grid.Row="4" Grid.Column="1" />
-                <Image x:Name="imgQuest5" IsVisible="false" Margin="20,0,0,0" Source="SimpleTick" WidthRequest="20" HeightRequest="20" Grid.Row="5" Grid.Column="0" />
+
+                <userControls:FontAwesomeLabel Text="{x:Static userControls:Icon.FASquare}" Grid.Row="5" Grid.Column="0"
+                VerticalOptions="Center" FontSize="28" TextColor="Blue" x:Name="imgQuest5" />
                 <Button x:Name="lblQuest5" Text="a random adventure" Clicked="HandleQuestClicked" Grid.Row="5" Grid.Column="1" />
             </Grid>
             <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
