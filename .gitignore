@@ -1,4 +1,6 @@
 .DS_Store
+PerilousMobile/.mfractor/*
+PerilousMobile/.vs/*
 PerilousMobile/Droid/obj/*
 PerilousMobile/Droid/Debug/*
 PerilousMobile/Droid/bin/*
