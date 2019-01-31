@@ -12,7 +12,12 @@ I added SkiaSharp to the project and put some simple geometric shapes in, hoping
 ![](https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/2019-01-31/pm-skia-map-full-1-2019-01-31.png)  
 ![](https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/2019-01-31/pm-skia-map-partial-2-2019-01-31.png) - 
 ![](https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/2019-01-31/pm-skia-map-full-2-2019-01-31.png)  
-
+  
+  
+  
+## 2018 updates  
+  
+  
 includes;  
 enumerations, simple classes, xaml forms, await/async, collections  
 https://github.com/robsoft/PerilousMobile/blob/master/PerilousMobile/GameClass/Game_Maps.cs  has some comments :-)   
@@ -30,9 +35,6 @@ https://github.com/robsoft/PerilousMobile/blob/master/PerilousMobile/GameClass/G
 ![](https://github.com/robsoft/PerilousMobile/blob/master/ScreenShots/2018-02-01/game10.png)  
 
 
-
-
-## 2018 updates  
 
 inspiration (though rapidly moving on from it!)
 http://www.zx81stuff.org.uk/zx81/tape/FantasyGames
