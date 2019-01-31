@@ -12,7 +12,8 @@ namespace PerilousMobile
         {
             InitializeComponent();
 
-            lblVersion.Text = "Version 0.2";
+            //TODO: sort this out!
+            lblVersion.Text = "version 0.3";
         }
     }
 }

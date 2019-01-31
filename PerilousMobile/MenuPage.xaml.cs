@@ -40,11 +40,6 @@ namespace PerilousMobile
             await Navigation.PushModalAsync(new SelectionPage());
         }
 
-        async void OnBackStoryClickedHandler(object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new BackStoryPage());
-        }
-
         public MenuPage()
         {
             InitializeComponent();

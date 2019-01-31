@@ -1,56 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.PlayerPage" Title="Perilous Swamp">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:userControls="clr-namespace:PerilousMobile.UserControls" 
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="PerilousMobile.PlayerPage" 
+             Title="Perilous Swamp">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="FillAndExpand">
             <Label HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Status" 
             Margin="0,20,0,10" x:Name="lblStatus"/>
-
+            
+            <skia:SKCanvasView x:Name="canvasView" BackgroundColor="Blue" PaintSurface="canvasView_PaintSurface" 
+                               HeightRequest="350" WidthRequest="200"/>
+            
+            <!--
             <Label HorizontalTextAlignment="Center" Text="map here" FontFamily="Courier" x:Name="lblMap">
-                                <Label.FontFamily>     
+                <Label.FontFamily>     
                 <OnPlatform x:TypeArguments="x:String">         
                 <OnPlatform.Android>monospace</OnPlatform.Android>         
                 <OnPlatform.iOS>Courier New</OnPlatform.iOS>     
                 </OnPlatform> </Label.FontFamily>
-                </Label>
-
-            <Button Text="Show Key" x:Name="btnKey" 
-              VerticalOptions="End" Clicked="OnShowKeyClickedHandler" />
             
-            <StackLayout x:Name="stkKey" 
-                HorizontalOptions="FillAndExpand" VerticalOptions="End">
-            <Label HorizontalTextAlignment="Center" Text="@ you  P princess  E exits  $ Loot" FontFamily="Courier" FontSize="Small"/>
-            <Label HorizontalTextAlignment="Center" Text="M Monster  f Food  W weapon" FontFamily="Courier" FontSize="Small"/>
-            </StackLayout>
-
+                </Label> -->
+            
             <StackLayout x:Name="stkMoves" 
                 HorizontalOptions="FillAndExpand" VerticalOptions="End">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal">
-                            <Button x:Name="btnNW" Text="NW" Clicked="OnMoveClickedHandler" />
-                            <Button x:Name="btnNO" Text="No" Clicked="OnMoveClickedHandler" />
-                            <Button x:Name="btnNE" Text="NE" Clicked="OnMoveClickedHandler" />
+                            <Button BorderWidth="1" x:Name="btnNW"  Text="NW" Clicked="OnMoveClickedHandler" Margin="0,5,0,5"/>
+                            <Button BorderWidth="1" x:Name="btnNO" Text="N" Clicked="OnMoveClickedHandler" Margin="5,5,5,5"/>
+                            <Button BorderWidth="1" x:Name="btnNE" Text="NE" Clicked="OnMoveClickedHandler" Margin="0,5,0,5"/>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Button x:Name="btnWE" Text="We" Clicked="OnMoveClickedHandler" />
-                            <Button x:Name="btnInv" Text="Inv" Clicked="OnInventoryClickedHandler" />
-                            <Button x:Name="btnEA" Text="Ea" Clicked="OnMoveClickedHandler" />
+                            <Button BorderWidth="1" x:Name="btnWE" Text="W" Clicked="OnMoveClickedHandler" Margin="0,5,0,5"/>
+                            <Button BorderWidth="1" x:Name="btnInv" Text="Inv" Clicked="OnInventoryClickedHandler" Margin="5,5,5,5"/>               
+                            <Button BorderWidth="1" x:Name="btnEA" Text="E" Clicked="OnMoveClickedHandler" Margin="0,5,0,5"/>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Button x:Name="btnSW" Text="SW" Clicked="OnMoveClickedHandler" />
-                            <Button x:Name="btnSO" Text="So" Clicked="OnMoveClickedHandler" />
-                            <Button x:Name="btnSE" Text="SE" Clicked="OnMoveClickedHandler" />
+                            <Button BorderWidth="1" x:Name="btnSW" Text="SW" Clicked="OnMoveClickedHandler" Margin="0,5,0,5"/>
+                            <Button BorderWidth="1" x:Name="btnSO" Text="S" Clicked="OnMoveClickedHandler" Margin="5,5,5,5"/>
+                            <Button BorderWidth="1" x:Name="btnSE" Text="SE" Clicked="OnMoveClickedHandler" Margin="0,5,0,5"/>
                         </StackLayout>
                     </StackLayout>
-                    <StackLayout HorizontalOptions="End" Orientation="Vertical">
-                        <Label FontFamily="Courier" Text=" " />
-                        <Label FontFamily="Courier" Text="Health Points" x:Name="lblHealth" />
-                        <Label FontFamily="Courier" Text="Combat Points" x:Name="lblCombat" />
-                        <Label FontFamily="Courier" Text="Armour Points" x:Name="lblArmour" />
-                        <Label FontFamily="Courier" Text="Loot" x:Name="lblLoot" />
-                    </StackLayout>
+                    
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout x:Name="stkStats" HorizontalOptions="End" Orientation="Vertical">
+                            <Label FontFamily="Courier" Text=" " />
+                            <Label FontFamily="Courier" Text="Health Points" x:Name="lblHealth" />
+                            <Label FontFamily="Courier" Text="Combat Points" x:Name="lblCombat" />
+                            <Label FontFamily="Courier" Text="Armour Points" x:Name="lblArmour" />
+                            <Label FontFamily="Courier" Text="Loot" x:Name="lblLoot" />
+                        </StackLayout>
+                        
+                        <StackLayout x:Name="stkKey" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                            <Label FontFamily="Courier" Text=" " />
+                            <Label HorizontalTextAlignment="Center" Text="@ you   P princess" FontFamily="Courier" FontSize="Small"/>
+                            <Label HorizontalTextAlignment="Center" Text="E exits   $ loot" FontFamily="Courier" FontSize="Small"/>
+                            <Label HorizontalTextAlignment="Center" Text="M monster   f food" FontFamily="Courier" FontSize="Small"/>
+                            <Label HorizontalTextAlignment="Center" Text="W weapon   ? puzzle" FontFamily="Courier" FontSize="Small"/>
+                        </StackLayout>
+                    
+                        <Button Text="Show Key" x:Name="btnKey" VerticalOptions="End" Clicked="OnShowKeyClickedHandler" />
+                   </StackLayout>
+
                 </StackLayout>
             </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

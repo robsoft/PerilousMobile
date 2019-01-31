@@ -286,7 +286,7 @@ namespace PerilousMobile
         vulture,
         giant_spider,
         giant_rat,
-        wild_cat                                                                                  ,
+        wild_cat,
         wolf,
         grizzly_bear,
         giant_parasite_worm

@@ -26,9 +26,9 @@ namespace PerilousMobile
 		public bool gameOver = false;
 
 		private const int internalVersion = 1;
-        private const int xDim = 29;
-        private const int yDim = 17;
-        private const int noMapViewableSize = 3;
+        public const int xDim = 20;
+        public const int yDim = 20;
+        private const int noMapViewableSize = 2; // effectively give 3x3 around the player
 
         private const int lootCount = (int)((xDim * yDim) * 0.02);
         private const int monsterCount = (int)((xDim * yDim) * 0.09);
@@ -221,6 +221,7 @@ namespace PerilousMobile
         {
             // attach to our singleton random class
             rnd = Utils.rnd;
+            SkiaSetup();
 
             Reset();
         }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-
+using SkiaSharp;
+using SkiaSharp.Views.Forms;
 
 
 namespace PerilousMobile
@@ -12,21 +13,21 @@ namespace PerilousMobile
 
         private bool showKey = false;
 
-		async protected override void OnAppearing()
-		{
-			base.OnAppearing();
-			if (App.game.gameOver)
-				await Navigation.PopAsync();
-			else
-				ProcessMove();
-		}
+        async protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (App.game.gameOver)
+                await Navigation.PopAsync();
+            else
+                ProcessMove();
+        }
 
-		private void OnInventoryClickedHandler(object sender, System.EventArgs e)
-		{
-			Navigation.PushModalAsync(new InventoryPage());
-		}
+        private void OnInventoryClickedHandler(object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new InventoryPage());
+        }
 
-		
+
         private void OnMoveClickedHandler(object sender, System.EventArgs e)
         {
             // crude button for now
@@ -69,16 +70,16 @@ namespace PerilousMobile
                     case MapContent.LootSpace:
                         ShowLootPage();
                         break;
-					case MapContent.WeaponSpace:
-						ShowWeaponPage();
-						break;
-					case MapContent.FoodSpace:
-						ShowFoodPage();
-						break;
-					case MapContent.MonsterSpace:
-						ShowFightPage();
-						break;
-					default: // fight
+                    case MapContent.WeaponSpace:
+                        ShowWeaponPage();
+                        break;
+                    case MapContent.FoodSpace:
+                        ShowFoodPage();
+                        break;
+                    case MapContent.MonsterSpace:
+                        ShowFightPage();
+                        break;
+                    default: // fight
                         break;
                 }
             }
@@ -87,10 +88,10 @@ namespace PerilousMobile
             // but also the map might now be different again because of events
             // in the handlers above, so;
             RedrawMap();
-		}
+        }
 
-		#region Modal Dialog Handlers
-		private void ShowFightPage()
+        #region Modal Dialog Handlers
+        private void ShowFightPage()
         {
             Navigation.PushModalAsync(new FightPage());
         }
@@ -106,18 +107,18 @@ namespace PerilousMobile
         }
 
         private void ShowWeaponPage()
-		{
-			Navigation.PushModalAsync(new WeaponPage());
-		}
+        {
+            Navigation.PushModalAsync(new WeaponPage());
+        }
 
         private void ShowFoodPage()
-		{
-			Navigation.PushModalAsync(new FoodPage());
-		}
+        {
+            Navigation.PushModalAsync(new FoodPage());
+        }
 
         private void ShowPrincessPage()
         {
-			Navigation.PushModalAsync(new PrincessPage());
+            Navigation.PushModalAsync(new PrincessPage());
         }
 
         private void ShowLeavePage()
@@ -126,9 +127,22 @@ namespace PerilousMobile
         }
         #endregion
 
+
+        private void canvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e) 
+        {
+
+            //SKSurface surface = e.Surface;
+            //SKCanvas canvas = surface.Canvas;
+
+            App.game.DrawMap(e);
+
+        }
+
         private void RedrawMap()
 		{
-            lblMap.Text = App.game.GetMapAsText();
+            //lblMap.Text = App.game.GetMapAsText();
+            canvasView.InvalidateSurface();
+
 			lblStatus.Text = " Task - " + App.game.GetStatusText();
 
 			lblLoot.Text   = "  Loot   : " + App.game.GetLootText();
@@ -147,15 +161,18 @@ namespace PerilousMobile
             btnKey.IsEnabled = App.game.CanShowKey();
 
             // test showKey etc
-            stkMoves.IsVisible = !showKey;
+            //showKey = true;
+            //stkMoves.IsVisible = !showKey;
             stkKey.IsVisible = showKey;
-            btnKey.Text = showKey ? "Hide Key" : "Show Key";
+            stkStats.IsVisible = !showKey;
+            btnKey.Text = showKey ? "Show Stats" : "Show Key";
 
 		}
 
         public PlayerPage()
         {
             InitializeComponent();
+
             RedrawMap();
         }
     }

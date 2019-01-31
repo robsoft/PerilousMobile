@@ -20,9 +20,26 @@ namespace PerilousMobile.UserControls
             }
         }
 
-        // https://github.com/neilkennedy/FontAwesome.Xamarin/blob/master/FontAwesome.Xamarin/FontAwesome.cs
-        // For a huge list of icon codes
-        public static class Icon
+    public class FontAwesomeButton : Button
+    {
+        public static readonly string FontAwesomeName = "Font Awesome 5 Pro"; //"FontAwesome";
+
+        //Parameterless constructor for XAML
+        public FontAwesomeButton()
+        {
+            FontFamily = FontAwesomeName;
+        }
+
+        public FontAwesomeButton(string fontAwesomeLabel = null)
+        {
+            FontFamily = FontAwesomeName;
+            Text = fontAwesomeLabel;
+        }
+    }
+
+    // https://github.com/neilkennedy/FontAwesome.Xamarin/blob/master/FontAwesome.Xamarin/FontAwesome.cs
+    // For a huge list of icon codes
+    public static class Icon
         {
         public static readonly string FAGlass = "\uf000";
         public static readonly string FAMusic = "\uf001";

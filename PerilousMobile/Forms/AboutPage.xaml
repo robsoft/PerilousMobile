@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.AboutPage" Title="About">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PerilousMobile.AboutPage" Title="About">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label HorizontalTextAlignment="Center" FontSize="24" Text="The Perilous Swamp"/>
+            <Label HorizontalTextAlignment="Center" x:Name="lblVersion" Text="version 0.01" Margin="0,5,0,0"/>
             <Label HorizontalTextAlignment="Center" Text="(increasingly) loosely inspired by" />
-            <Image Source="PerilousCoverShot" HeightRequest="300" Margin="0,10,0,0"/>
-            <Label HorizontalTextAlignment="Center" x:Name="lblVersion" Text="version 0.01" />
-            <Image Source="RobsoftLogo333x333" HeightRequest="120" Margin="0,10,0,0"/>
-            <Label HorizontalTextAlignment="Center" Text="by Dad &amp; Olivia @ Robsoft" />
+            <Image Source="PerilousCoverShot" HeightRequest="270" Margin="0,10,0,0"/>
+            <Label HorizontalTextAlignment="Center" Text="and Nightmark Park,"/>
+            <Label HorizontalTextAlignment="Center" Text="from the Commodore PET" />
+            <Image Source="RobsoftLogo333x333" HeightRequest="110" Margin="0,0,0,0"/>
+            <Label HorizontalTextAlignment="Center" Text="by Olivia &amp; Rob @ Robsoft" Margin="0,5,0,0"/>
             
         </StackLayout>
     </ContentPage.Content>

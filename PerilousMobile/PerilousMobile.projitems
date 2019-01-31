@@ -20,9 +20,6 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\FoodPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\BackStoryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\LeavePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -76,9 +73,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Forms\FoodPage.xaml.cs">
       <DependentUpon>FoodPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Forms\BackStoryPage.xaml.cs">
-      <DependentUpon>BackStoryPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Forms\LeavePage.xaml.cs">
       <DependentUpon>LeavePage.xaml</DependentUpon>
     </Compile>
@@ -114,6 +108,7 @@
       <DependentUpon>SelectionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)FontAwesomeLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game_Skia.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GameClass\" />
