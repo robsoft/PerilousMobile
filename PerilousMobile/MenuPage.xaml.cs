@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace PerilousMobile
 {
@@ -22,7 +23,13 @@ namespace PerilousMobile
 
         async void OnAboutClickedHandler(object sender, System.EventArgs e)
         {
+
             await Navigation.PushAsync(new AboutPage());
+        }
+
+        void OnCrashClickedHandler(object sender, System.EventArgs e)
+        {
+           
         }
 
         async void OnResumeClickedHandler(object sender, System.EventArgs e)
