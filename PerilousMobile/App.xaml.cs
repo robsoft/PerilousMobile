@@ -10,11 +10,11 @@ namespace PerilousMobile
 
         public App()
         {
-                game = new Game();
+            game = new Game();
 
-                InitializeComponent();
+            InitializeComponent();
 
-                MainPage = new NavigationPage(new MenuPage());
+            MainPage = new NavigationPage(new MenuPage());
         }
 
 

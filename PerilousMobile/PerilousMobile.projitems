@@ -109,7 +109,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)FontAwesomeLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameClass\Game_Skia.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AnalyticsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GameClass\" />
